@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Лариса Зайцевская](https://up.htmlacademy.ru/htmlcss/36/user/1616145).
-* Наставник: `Ольга Тюлихова` (https://htmlacademy.ru/profile/id523263).
+* Наставник: [Ольга Тюлихова](https://htmlacademy.ru/profile/id523263).
 
 ---
 
