@@ -7,11 +7,11 @@
   <body>
 
     <!-- Header -->
-      <header class="main-header">
-        <a href="main.html">
-          <img class="logo" src="#" alt="логотип">
-        </a>
+      <header class="catalog-header">
         <nav class="navigation">
+            <a class="navigation-logo" href="index.html">
+              <img class="page-header-logo" src="#" alt="Логотип магазина Глейси">
+            </a>
             <ul class="navigation-list">
               <li class="navigation-item">
                 <a class="navigation-link" href="catalog.html">Каталог</a>
@@ -36,10 +36,10 @@
                   -->
               </li>
               <li class="navigation-item">
-                <a class="navigation-link" href="delivery.html">Доставка и оплата</a>
+                <a class="navigation-link" href="#">Доставка и оплата</a>
               </li>
               <li class="navigation-item">
-                <a class="navigation-link" href="about.html">О компании</a>
+                <a class="navigation-link" href="#">О компании</a>
               </li>
             </ul>
         </nav>
@@ -63,6 +63,120 @@
           </li>
         </ul>
       </header>
+
+<!-- Main -->
+      <main class="main-catalog">
+        <h1 class="visually-hidden">Каталог</h1>
+        <header class="catalog-inner-header">
+          <ul class="breadcrumbs">
+            <li class="breadcrumbs-item">
+              <a class="breadcrumbs-link" href="index.html">Главная</a>
+            </li>
+            <li class="breadcrumbs-item">
+              <a class="breadcrumbs-link" href="#">Каталог</a>
+            </li>
+            <li class="breadcrumbs-item">
+              <a class="breadcrumbs-link navigation-link-current">Сливочное мороженое</a>
+            </li>
+          </ul>
+          <h2 class="catalog-title">Сливочное мороженое</h2>
+      </header>
+      <section class="catalog-filter">
+        <h2 class="visually-hidden">Фильтры в каталоге</h2>
+        <form class="catalog-filter-form" action="https://htmlacademy.ru/" method="get">
+
+          <fieldset class="catalog-filter-group">
+            <legend class="catalog-filter-title">Сортировка:</legend>
+              <select name="sorting">
+                <option value="popular">по популярности</option>
+              </select>
+          </fieldset>
+          <fieldset>
+            <legend class="catalog-filter-title">Цена: 100 ₽ – 500 ₽</legend>
+              <input type="range" min="100" max="500" step="100">
+          </fieldset>
+
+
+          <!-- Фильтр с радиокнопками -->
+          <fieldset class="catalog-filter-group">
+            <legend class="catalog-filter-title">Жирность:</legend>
+            <ul class="catalog-filter-list">
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input class="control-input" type="radio" name="radio-group" value="0">
+                  0%
+                </label>
+              </li>
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input class="control-input" type="radio" name="radio-group" value="before-10" checked>
+                  до 10%
+                </label>
+              </li>
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input class="control-input" type="radio" name="radio-group" value="before-30">
+                  до 30%
+                </label>
+              </li>
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input class="control-input" type="radio" name="radio-group" value="above-30">
+                  выше 30%
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+
+
+          <!-- Фильтр с чекбоксами-->
+          <fieldset class="catalog-filter-group">
+            <legend class="catalog-filter-title">Наполнители:</legend>
+              <ul class="catalog-filter-list">
+                <li class="catalog-filter-item">
+                  <label class="control">
+                    <input class="control-input" type="checkbox" name="chocolate" checked>
+                    шоколадные
+                  </label>
+                </li>
+                <li class="catalog-filter-item">
+                  <label class="control">
+                    <input class="control-input" type="checkbox" name="sugar" checked>
+                    сахарные посыпки
+                  </label>
+                </li>
+                <li class="catalog-filter-item">
+                  <label class="control">
+                    <input class="control-input" type="checkbox" name="fruit">
+                    фрукты
+                  </label>
+                </li>
+                <li class="catalog-filter-item">
+                  <label class="control">
+                    <input class="control-input" type="checkbox" name="syrup">
+                    сиропы
+                  </label>
+                </li>
+                <li class="catalog-filter-item">
+                  <label class="control">
+                    <input class="control-input" type="checkbox" name="jams">
+                    джемы
+                  </label>
+                </li>
+              </ul>
+        </fieldset>
+
+        <button class="button button-third" type="submit">Применить</button>
+        </form>
+      </section>
+
+
+
+
+
+      </main>
+
+
 
 
 
