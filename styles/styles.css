@@ -30,6 +30,20 @@ color: #2D3440;
 background-color: #FEAFC3;
 }
 
+.button {
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.main-button {
+  color: #2D3440;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-decoration: none;
+}
+
 
 /* Header */
 
@@ -80,7 +94,6 @@ h1 {
   font-weight: 900;
   font-size: 36px;
   line-height: 46px;
-  color: #2D3440;
   text-align: left;
 }
 
@@ -90,7 +103,6 @@ h2 {
   font-weight: 900;
   font-size: 32px;
   line-height: 46px;
-  color: #2D3440;
   text-align: center;
 }
 
@@ -100,8 +112,6 @@ h3 {
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
-  color: #2D3440;
-  text-align: left;
 }
 
 p {
@@ -131,16 +141,20 @@ p {
   line-height: 24px;
 }
 
-.button {
-  font-family: Inter, sans-serif;
-  font-style: normal;
-  font-weight: 700;
+.gifts-item {
+  color: #2D3440;
+  background-color: #FF7799;
+  text-align: left;
 }
 
-.main-button {
-  color: #2D3440;
-  font-size: 16px;
-  line-height: 20px;
-  text-align: center;
-  text-decoration: none;
+.raspberry {
+background-image: url(/images/raster/background-images/raspberry.png);
+background-size: 100% auto;
+background-repeat: no-repeat;
+}
+
+.marshmallow {
+  background-image: url(/images/raster/background-images/marshmellow.png);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
 }
