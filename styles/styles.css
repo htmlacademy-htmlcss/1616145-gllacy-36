@@ -111,3 +111,36 @@ p {
   font-size: 18px;
   line-height: 24px;
 }
+
+.slider-text {
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  color: #2D3440;
+  text-align: left;
+}
+
+.slider-text-title {
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 46px;
+}
+
+.slider-text-description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.button {
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.main-button {
+  color: #2D3440;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-decoration: none;
+}
