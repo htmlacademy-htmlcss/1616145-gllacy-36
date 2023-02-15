@@ -90,13 +90,7 @@ margin: 0;
 
 /* Main */
 
-.main-index {
-  color: #2D3440;
-  background-color: #FEAFC3;
-}
-
 h1 {
-  font-family: Inter, sans-serif;
   font-style: normal;
   font-weight: 900;
   font-size: 36px;
@@ -105,7 +99,6 @@ h1 {
 }
 
 h2 {
-  font-family: Inter, sans-serif;
   font-style: normal;
   font-weight: 900;
   font-size: 32px;
@@ -114,7 +107,6 @@ h2 {
 }
 
 h3 {
-  font-family: Inter, sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -122,11 +114,13 @@ h3 {
 }
 
 p {
-  font-family: Inter, sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 24px;
+}
+
+.hero-block ul {
+  padding: 0;
+  list-style-type: none;
 }
 
 .slider-text {
@@ -148,20 +142,31 @@ p {
   line-height: 24px;
 }
 
+.gifts ul {
+  padding: 0;
+  list-style-type: none;
+}
+
 .gifts-item {
   color: #2D3440;
   background-color: #FF7799;
   text-align: left;
 }
 
+.gifts-description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+
 .raspberry {
 background-image: url(/images/raster/background-images/raspberry.png);
-background-size: 100% auto;
+background-size: contain;
 background-repeat: no-repeat;
 }
 
 .marshmallow {
   background-image: url(/images/raster/background-images/marshmellow.png);
-  background-size: 100% auto;
+  background-size: contain;
   background-repeat: no-repeat;
 }
