@@ -46,6 +46,15 @@ margin: 0;
   background-color: #FCFCFC;
 }
 
+.additional-button {
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #FCFCFC;
+  background-color: #FF2F64;
+  border-color: #FF2F644D;
+ }
+
 
 /* Header */
 
@@ -242,3 +251,37 @@ background-color: #FF2F64;
   line-height: 22px;
   color: #565C66;
 }
+
+.blog {
+  background-image: url(/images/raster/background-images/news.jpg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+ .blog span {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #565C66;
+ }
+
+ .blog-link {
+  color: #2D3440;
+  text-decoration: none;
+ }
+
+ .subscribe {
+  background-image: url(/images/raster/background-images/line.jpg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+ }
+
+ .subscribe-background {
+  background-color: #ffffff;
+  margin: 6px;
+ }
+
+ .subscribe p {
+  font-size: 16px;
+  line-height: 22px;
+  color: #565C66;
+ }
