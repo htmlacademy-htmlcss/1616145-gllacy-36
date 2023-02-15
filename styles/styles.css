@@ -113,6 +113,14 @@ h3 {
   line-height: 30px;
 }
 
+h4 {
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 24px;
+text-align: center;
+}
+
 p {
   font-style: normal;
   font-weight: 400;
@@ -169,4 +177,68 @@ background-repeat: no-repeat;
   background-image: url(/images/raster/background-images/marshmellow.png);
   background-size: contain;
   background-repeat: no-repeat;
+}
+
+.popular ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+.product-card {
+  background-color: #FCFCFC;
+}
+
+.product-card-link {
+  text-decoration: none;
+  text-align: center;
+}
+
+.product-card-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #2D3440;
+}
+
+.product-description {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #565C66;
+}
+
+.product-card-price {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #2D3440;
+}
+
+product-card-button {
+background-color: #FF2F64;
+}
+
+.about {
+  background-image: url(/images/raster/background-images/waffle.jpg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.about-background {
+  background-color: #ffffff;
+  margin: 24px;
+}
+
+.about ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+.about-description {
+  font-size: 16px;
+  line-height: 22px;
+  color: #565C66;
 }
