@@ -28,6 +28,7 @@ font-size: 18px;
 line-height: 24px;
 color: #2D3440;
 background-color: #FEAFC3;
+margin: 0;
 }
 
 .button {
@@ -37,11 +38,12 @@ background-color: #FEAFC3;
 }
 
 .main-button {
-  color: #2D3440;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
   text-decoration: none;
+  color: #2D3440;
+  background-color: #FCFCFC;
 }
 
 
@@ -52,25 +54,29 @@ background-color: #FEAFC3;
   background-color: #FEAFC3;
 }
 
+.index-header ul {
+  padding: 0;
+  list-style-type: none;
+}
+
 .navigation-link {
-  font-family: Inter, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   color: #2D3440;
-  text-align: left;
+  text-align: center;
   text-decoration: none;
 }
 
 .navigation-user-link {
-  font-family: Inter, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
   color: #2D3440;
-  text-align: left;
+  background-color: #FCFCFC4D;  ;
+  text-align: right;
   text-decoration: none;
 }
 
@@ -78,6 +84,7 @@ background-color: #FEAFC3;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
+  background-color: #FEAFC3;
 }
 
 
