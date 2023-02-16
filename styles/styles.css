@@ -35,6 +35,7 @@ margin: 0;
   font-family: Inter, sans-serif;
   font-style: normal;
   font-weight: 700;
+  text-decoration: none;
 }
 
 .main-button {
@@ -286,6 +287,17 @@ background-color: #FF2F64;
   color: #565C66;
  }
 
+ .communication-form {
+  background-color: #FCFCFC;
+ }
+
+ .communication-form-text {
+  font-size: 16px;
+  line-height: 22px;
+  color: #565C66;
+  text-align: left;
+ }
+
  .delivery {
   background-image: url(/images/raster/background-images/delivery.jpg);
   background-size: 100% auto;
@@ -296,20 +308,24 @@ background-color: #FF2F64;
   text-align: left;
  }
 
- .delivery p {
-  font-size: 16px;
-  line-height: 22px;
-  color: #565C66;
-  text-align: left;
- }
-
- .enter-the-address {
-  background-color: #FCFCFC;
- }
 
  .delivery-form p {
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
   color:#2D3440;
+ }
+
+ .contacts {
+  background-image: url(/images/raster/background-images/feedback.jpg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+ }
+
+ .contacts-important {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #2D3440;
+  text-decoration: none;
  }
