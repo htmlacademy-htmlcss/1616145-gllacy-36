@@ -285,3 +285,31 @@ background-color: #FF2F64;
   line-height: 22px;
   color: #565C66;
  }
+
+ .delivery {
+  background-image: url(/images/raster/background-images/delivery.jpg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+ }
+
+ .delivery h2{
+  text-align: left;
+ }
+
+ .delivery p {
+  font-size: 16px;
+  line-height: 22px;
+  color: #565C66;
+  text-align: left;
+ }
+
+ .enter-the-address {
+  background-color: #FCFCFC;
+ }
+
+ .delivery-form p {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  color:#2D3440;
+ }
