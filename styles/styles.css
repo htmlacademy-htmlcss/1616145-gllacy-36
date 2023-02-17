@@ -31,6 +31,18 @@ background-color: rgba(254, 175, 195, 1);
 margin: 0;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
 .button {
   font-family: inherit;
   font-style: normal;
@@ -63,6 +75,7 @@ margin: 0;
   background-color: rgba(252, 252, 252, 0.3);
   border-color: rgba(252, 252, 252, 1);
   }
+
 
 /* Header */
 
@@ -107,15 +120,7 @@ margin: 0;
 
 /* Main */
 
-h1 {
-  font-style: normal;
-  font-weight: 900;
-  font-size: 36px;
-  line-height: 46px;
-  text-align: left;
-}
-
-h2 {
+.section-title-center {
   font-style: normal;
   font-weight: 900;
   font-size: 32px;
@@ -123,24 +128,20 @@ h2 {
   text-align: center;
 }
 
-h3 {
+.section-title-left {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+  text-align: left;
+}
+
+.banner-title {
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
-}
-
-h4 {
-font-style: normal;
-font-weight: 700;
-font-size: 20px;
-line-height: 24px;
-text-align: center;
-}
-
-p {
-  font-style: normal;
-  font-weight: 400;
+  text-align: left;
 }
 
 .hero-block ul {
@@ -311,12 +312,7 @@ background-color: rgba(255, 47, 100, 1);
   background-repeat: no-repeat;
  }
 
- .delivery h2{
-  text-align: left;
- }
-
-
- .delivery-form p {
+ .input-label-text {
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
@@ -385,10 +381,6 @@ color: rgba(45, 52, 64, 1);
 
 .navigation-link-current {
 text-decoration: underline;
-}
-
-.catalog-title {
-  font-size: 32px;
 }
 
 
