@@ -32,7 +32,7 @@ margin: 0;
 }
 
 .button {
-  font-family: Inter, sans-serif;
+  font-family: inherit;
   font-style: normal;
   font-weight: 700;
   text-decoration: none;
@@ -149,7 +149,7 @@ p {
 }
 
 .slider-text {
-  font-family: Inter, sans-serif;
+  font-family: inherit;
   font-style: normal;
   color: #2D3440;
   text-align: left;
