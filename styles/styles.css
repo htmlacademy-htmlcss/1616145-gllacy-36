@@ -92,7 +92,7 @@ margin: 0;
   font-size: 14px;
   line-height: 20px;
   color: #2D3440;
-  background-color: #FCFCFC4D;  ;
+  background-color: #FCFCFC4D;
   text-align: right;
   text-decoration: none;
 }
@@ -234,7 +234,7 @@ background-repeat: no-repeat;
   color: #2D3440;
 }
 
-product-card-button {
+.product-card-button {
 background-color: #FF2F64;
 }
 
