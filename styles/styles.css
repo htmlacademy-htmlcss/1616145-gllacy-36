@@ -2,7 +2,7 @@
 font-family: Inter;
 font-style: normal;
 font-weight: 400;
-src: url(/fonts/inter-400.woff2) format("woff2");
+src: url(../fonts/inter-400.woff2) format("woff2");
 font-display: swap;
 }
 
@@ -10,7 +10,7 @@ font-display: swap;
   font-family: Inter;
   font-style: normal;
   font-weight: 700;
-  src: url(/fonts/inter-700.woff2) format("woff2");
+  src: url(../fonts/inter-700.woff2) format("woff2");
   font-display: swap;
 }
 
@@ -18,7 +18,7 @@ font-display: swap;
   font-family: Inter;
   font-style: normal;
   font-weight: 900;
-  src: url(/fonts/inter-900.woff2) format("woff2");
+  src: url(../fonts/inter-900.woff2) format("woff2");
   font-display: swap;
 }
 
@@ -185,13 +185,13 @@ p {
 }
 
 .raspberry {
-background-image: url(/images/raster/background-images/raspberry.png);
+background-image: url(../images/raster/background-images/raspberry.png);
 background-size: contain;
 background-repeat: no-repeat;
 }
 
 .marshmallow {
-  background-image: url(/images/raster/background-images/marshmellow.png);
+  background-image: url(../images/raster/background-images/marshmellow.png);
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -239,7 +239,7 @@ background-color: #FF2F64;
 }
 
 .about {
-  background-image: url(/images/raster/background-images/waffle.jpg);
+  background-image: url(../images/raster/background-images/waffle.jpg);
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
@@ -261,7 +261,7 @@ background-color: #FF2F64;
 }
 
 .blog {
-  background-image: url(/images/raster/background-images/news.jpg);
+  background-image: url(../images/raster/background-images/news.jpg);
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
@@ -278,7 +278,7 @@ background-color: #FF2F64;
  }
 
  .subscribe {
-  background-image: url(/images/raster/background-images/line.jpg);
+  background-image: url(../images/raster/background-images/line.jpg);
   background-size: 100% auto;
   background-repeat: no-repeat;
  }
@@ -306,7 +306,7 @@ background-color: #FF2F64;
  }
 
  .delivery {
-  background-image: url(/images/raster/background-images/delivery.jpg);
+  background-image: url(../images/raster/background-images/delivery.jpg);
   background-size: 100% auto;
   background-repeat: no-repeat;
  }
@@ -324,7 +324,7 @@ background-color: #FF2F64;
  }
 
  .contacts {
-  background-image: url(/images/raster/background-images/feedback.jpg);
+  background-image: url(../images/raster/background-images/feedback.jpg);
   background-size: 100% auto;
   background-repeat: no-repeat;
  }
