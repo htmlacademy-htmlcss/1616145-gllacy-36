@@ -1,9 +1,9 @@
 @font-face {
-font-family: Inter;
-font-style: normal;
-font-weight: 400;
-src: url(../fonts/inter-400.woff2) format("woff2");
-font-display: swap;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/inter-400.woff2) format("woff2");
+  font-display: swap;
 }
 
 @font-face {
@@ -22,19 +22,36 @@ font-display: swap;
   font-display: swap;
 }
 
+html,
 body {
-font-family: Inter, sans-serif;
-font-size: 18px;
-line-height: 24px;
-color: #2D3440;
-background-color: #FEAFC3;
-margin: 0;
+  min-height: 100vh;
+}
+
+body {
+  font-family: Inter, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  color: #2D3440;
+  background-color: #FEAFC3;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 *,
 *::before,
 *::after {
   box-sizing: border-box;
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.big-block ~ .big-block {
+  margin-top: 80px;
 }
 
 img {
@@ -66,15 +83,15 @@ img {
   color: #FCFCFC;
   background-color: #FF2F64;
   border-color: rgba(255, 47, 100, 0.3);
- }
+}
 
- .button-third {
+.button-third {
   font-size: 14px;
   line-height: 20px;
   color: #2D3440;
   background-color: rgba(252, 252, 252, 0.3);
   border-color: #FCFCFC;
-  }
+}
 
 
 /* Header */
@@ -168,15 +185,19 @@ img {
   line-height: 24px;
 }
 
-.gifts ul {
+.gifts-list {
   padding: 0;
   list-style-type: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
 }
 
 .gifts-item {
   color: #2D3440;
   background-color: #FF7799;
   text-align: left;
+  flex: 1 1 570px;
 }
 
 .gifts-description {
@@ -186,9 +207,9 @@ img {
 }
 
 .raspberry {
-background-image: url(../images/raster/background-images/raspberry.png);
-background-size: contain;
-background-repeat: no-repeat;
+  background-image: url(../images/raster/background-images/raspberry.png);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .marshmallow {
@@ -200,10 +221,14 @@ background-repeat: no-repeat;
 .product-list {
   padding: 0;
   list-style-type: none;
+  margin: 0;
+  display: flex;
+  gap: 30px;
 }
 
 .product-card {
   background-color: #FCFCFC;
+  flex: 1 1 270px;
 }
 
 .product-card-link {
@@ -236,7 +261,7 @@ background-repeat: no-repeat;
 }
 
 .product-card-button {
-background-color: #FF2F64;
+  background-color: #FF2F64;
 }
 
 .about {
@@ -261,80 +286,90 @@ background-color: #FF2F64;
   color: #565C66;
 }
 
+.blog-and-subscribe {
+  display: flex;
+  gap: 30px;
+}
+
+.blog-and-subscribe-item {
+  flex: 1 1 570px;
+}
+
 .blog {
   background-image: url(../images/raster/background-images/news.jpg);
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
- .blog span {
+
+.blog span {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   color: #565C66;
- }
+}
 
- .blog-link {
+.blog-link {
   color: #2D3440;
   text-decoration: none;
- }
+}
 
- .subscribe {
+.subscribe {
   background-image: url(../images/raster/background-images/line.jpg);
   background-size: 100% auto;
   background-repeat: no-repeat;
- }
+}
 
- .subscribe-background {
+.subscribe-background {
   background-color: #FFFFFF;
   margin: 6px;
- }
+}
 
- .subscribe p {
+.subscribe p {
   font-size: 16px;
   line-height: 22px;
   color: #565C66;
- }
+}
 
- .communication-form {
+.communication-form {
   background-color: #FCFCFC;
- }
+}
 
- .communication-form-text {
+.communication-form-text {
   font-size: 16px;
   line-height: 22px;
   color: #565C66;
   text-align: left;
- }
+}
 
- .delivery {
+.delivery {
   background-image: url(../images/raster/background-images/delivery.jpg);
   background-size: 100% auto;
   background-repeat: no-repeat;
- }
+}
 
- .input-label-text {
+.input-label-text {
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
   color: #2D3440;
- }
+}
 
- .contacts {
+.contacts {
   background-image: url(../images/raster/background-images/feedback.jpg);
   background-size: 100% auto;
   background-repeat: no-repeat;
- }
+}
 
- .contacts-important {
+.contacts-important {
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
   color: #2D3440;
   text-decoration: none;
- }
+}
 
 
- /* Footer */
+/* Footer */
 
 .gllacy-footer {
   color: #2D3440;
@@ -354,9 +389,9 @@ background-color: #FF2F64;
 }
 
 .copyright-text {
-font-size: 12px;
-line-height: 16px;
-color: #2D3440;
+  font-size: 12px;
+  line-height: 16px;
+  color: #2D3440;
 }
 
 .htmlacademy-link {
@@ -380,7 +415,7 @@ color: #2D3440;
 }
 
 .navigation-link-current {
-text-decoration: underline;
+  text-decoration: underline;
 }
 
 
