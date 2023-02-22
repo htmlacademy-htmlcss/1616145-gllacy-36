@@ -237,6 +237,7 @@ img {
   background-color: #FF7799;
   text-align: left;
   flex: 1 1 570px;
+  height: 268px;
 }
 
 .gifts-description {
@@ -267,7 +268,8 @@ img {
 
 .product-card {
   background-color: #FCFCFC;
-  flex: 1 1 270px;
+  width: 270px;
+  height: 332px;
 }
 
 .product-card-link {
@@ -339,6 +341,7 @@ img {
 .blog-and-subscribe {
   display: flex;
   gap: 30px;
+  height: 224px;
 }
 
 .blog-and-subscribe-item {
@@ -463,11 +466,11 @@ height: 406px;
 .gllacy-footer {
   color: #2D3440;
   background-color: #FEAFC3;
-  height: 153px;
 }
 
 .footer-container {
   display: flex;
+  height: 153px;
 }
 
 .html-social-list {
