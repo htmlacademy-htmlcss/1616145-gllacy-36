@@ -52,6 +52,7 @@ body {
 
 .header-container {
   display: flex;
+  height: 104px;
 }
 
 .big-block ~ .big-block {
@@ -103,7 +104,6 @@ img {
 .gllacy-header {
   color: #2D3440;
   background-color: #FEAFC3;
-  height: 104px;
 }
 
 .gllacy-header ul {
@@ -263,13 +263,16 @@ img {
   list-style-type: none;
   margin: 0;
   display: flex;
-  gap: 30px;
+  flex-wrap: wrap;
+  row-gap: 40px;
+  column-gap: 30px;
 }
 
 .product-card {
   background-color: #FCFCFC;
   width: 270px;
   height: 332px;
+
 }
 
 .product-card-link {
@@ -501,9 +504,15 @@ height: 406px;
 
 /* Catalog breadcrumbs */
 
+.catalog-inner-header {
+margin: 32px auto 40px;
+}
+
 .breadcrumbs {
+  display: flex;
   padding: 0;
   list-style-type: none;
+  margin: 0 auto 16px;
 }
 
 .breadcrumbs-link {
@@ -512,7 +521,11 @@ height: 406px;
   font-weight: 700;
   color: #2D3440;
   text-decoration: none;
+  margin-right: 8px;
+}
 
+.catalog-title {
+  margin: 0;
 }
 
 .navigation-link-current {
@@ -521,6 +534,29 @@ height: 406px;
 
 
 /* Catalog filters */
+
+.catalog-filter-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  margin-right: 16px;
+}
+
+.group-one {
+  display: flex;
+  height: 64px;
+  margin-bottom: 16px;
+}
+
+.group-two {
+  display: flex;
+  height: 68px;
+}
+
+.catalog-filter {
+  display: flex;
+  margin-bottom: 40px;
+}
 
 .catalog-filter-title {
   font-size: 14px;
@@ -533,13 +569,45 @@ height: 406px;
   line-height: 20px;
   font-weight: 400;
   padding: 0;
+  margin: 0;
   list-style-type: none;
 }
 
+.sorting {
+  width: 196px;
+  height: auto;
+  margin: 0 24px 0 auto;
+}
+
+.price {
+width: 196px;
+height: auto;
+margin: 0 24px 0 auto;
+}
+
+.fat {
+  display: flex;
+  padding: 0;
+  width: auto;
+  height: auto;
+}
+
+.ingredient {
+  margin-right: 16px;
+}
 
 /* Catalog Pagination */
 
+.show-products {
+  display: flex;
+  height: 126px;
+  margin-top: 16px;
+  margin-bottom: 39px;
+}
+
 .pagination {
+  display: flex;
+  margin: 0;
   padding: 0;
   list-style-type: none;
 }

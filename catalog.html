@@ -11,7 +11,7 @@
 
     <!-- Header -->
     <header class="gllacy-header">
-      <div class="container">
+      <div class="container header-container">
         <nav class="navigation">
           <a class="navigation-logo" href="index.html">
             <img class="page-header-logo" src="images/vector/logo-gllacy.svg" width="137" height="56"
@@ -86,20 +86,21 @@
               <a class="breadcrumbs-link navigation-link-current">Сливочное мороженое</a>
             </li>
           </ul>
-          <h1 class="section-title-left">Сливочное мороженое</h1>
+          <h1 class="section-title-left catalog-title">Сливочное мороженое</h1>
         </header>
         <section class="catalog-filter">
-          <h2 class="visually-hidden">Фильтры в каталоге</h2>
+          <h2 class="visually-hidden" hidden>Фильтры в каталоге</h2>
           <form class="catalog-filter-form" action="https://htmlacademy.ru/" method="get">
 
-            <fieldset class="catalog-filter-group">
+            <div class="group-one">
+            <fieldset class="catalog-filter-group sorting">
               <legend class="catalog-filter-title">Сортировка:</legend>
               <select name="sorting">
                 <option value="popular">по популярности</option>
               </select>
             </fieldset>
 
-            <fieldset>
+            <fieldset class="catalog-filter-group price">
               <legend class="catalog-filter-title">Цена: 100 ₽ – 500 ₽</legend>
               <input type="range" min="100" max="500" step="100"> <!-- Исправить элемент в соответствующем задании -->
             </fieldset>
@@ -107,7 +108,7 @@
             <!-- Фильтр с радиокнопками -->
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title">Жирность:</legend>
-              <ul class="catalog-filter-list">
+              <ul class="catalog-filter-list fat">
                 <li class="catalog-filter-item">
                   <label class="control">
                     <input class="control-input" type="radio" name="radio-group" value="0">
@@ -134,9 +135,11 @@
                 </li>
               </ul>
             </fieldset>
+          </div>
 
+          <div class="group-two">
             <!-- Фильтр с чекбоксами-->
-            <fieldset class="catalog-filter-group">
+            <fieldset class="catalog-filter-group ingredient">
               <legend class="catalog-filter-title">Наполнители:</legend>
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
@@ -173,12 +176,13 @@
             </fieldset>
 
             <button class="button button-third" type="submit">Применить</button>
+          </div>
           </form>
         </section>
 
         <!-- Список товаров -->
         <section class="products">
-          <h2 class="visually-hidden">Список товаров</h2>
+          <h2 class="visually-hidden" hidden>Список товаров</h2>
           <ul class="product-list">
             <li class="product-card">
               <a class="product-card-link" href="#">
@@ -325,33 +329,35 @@
               </a>
             </li>
           </ul>
-          <button class="button main-button" type="button">Показать еще</button>
-          <ul class="pagination">
-            <li class="pagination-item">
-              <a class="pagination-link pagination-prev pagination-disabled">
-                <span class="visually-hidden">Предыдущая страница</span>
-              </a>
-            <li class="pagination-item">
-              <a class="pagination-link pagination-current">1</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">2</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">3</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">4</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">5</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link pagination-next" href="#">
-                <span class="visually-hidden">Следующая страница</span>
-              </a>
-            </li>
-          </ul>
+          <div class="show-products">
+            <button class="button main-button" type="button">Показать еще</button>
+            <ul class="pagination">
+              <li class="pagination-item">
+                <a class="pagination-link pagination-prev pagination-disabled">
+                  <span class="visually-hidden">Предыдущая страница</span>
+                </a>
+              <li class="pagination-item">
+                <a class="pagination-link pagination-current">1</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">2</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">3</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">4</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">5</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link pagination-next" href="#">
+                  <span class="visually-hidden">Следующая страница</span>
+                </a>
+              </li>
+            </ul>
+        </div>
         </section>
         <div class="decor-line"></div>
       </div>
@@ -360,7 +366,7 @@
 
     <!-- Footer -->
     <footer class="gllacy-footer">
-      <div class="container">
+      <div class="container footer-container">
         <ul class="html-social-list">
           <li class="html-social-item">
             <a class="social-button" href="https://t.me/htmlacademy">
@@ -379,14 +385,14 @@
           </li>
         </ul>
         <section class="footer-menu">
-          <h2 class="visually-hidden">Ссылки на страницы</h2>
+          <h2 class="visually-hidden" hidden>Ссылки на страницы</h2>
           <a class="footer-menu-link" href="#"><b>Для поставщиков</b></a>
           <a class="footer-menu-link" href="#">О производстве</a>
           <a class="footer-menu-link" href="#">Наши документы</a>
           <a class="footer-menu-link" href="#">Экологические стандарты</a>
         </section>
         <section class="footer-copyright">
-          <h2 class="visually-hidden">О разработчике сайта</h2>
+          <h2 class="visually-hidden" hidden>О разработчике сайта</h2>
           <a class="footer-copyright-link" href="https://htmlacademy.ru/">
             <img class="logo-html" src="images/vector/logo-htmlacademy.svg" alt="Логотип HTML Академии" width="93"
               height="27">
