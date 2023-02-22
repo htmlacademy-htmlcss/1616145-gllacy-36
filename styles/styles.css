@@ -283,8 +283,9 @@ img {
 }
 
 .about-title {
-  margin-top: 56px;
-  margin-bottom: 56px;
+  margin: 0 auto;
+  padding-top: 56px;
+  padding-bottom: 56px;
 }
 
 .about ul {
