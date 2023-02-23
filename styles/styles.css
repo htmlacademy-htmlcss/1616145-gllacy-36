@@ -515,13 +515,16 @@ margin: 32px auto 40px;
   margin: 0 auto 16px;
 }
 
-.breadcrumbs-link {
+.breadcrumbs-item {
   font-size: 14px;
   line-height: 20px;
   font-weight: 700;
+  margin-right: 8px;
+}
+
+.breadcrumbs-link {
   color: #2D3440;
   text-decoration: none;
-  margin-right: 8px;
 }
 
 .catalog-title {
@@ -555,7 +558,7 @@ margin: 32px auto 40px;
 
 .catalog-filter {
   display: flex;
-  margin-bottom: 40px;
+  margin-bottom: 44px;
 }
 
 .catalog-filter-title {
