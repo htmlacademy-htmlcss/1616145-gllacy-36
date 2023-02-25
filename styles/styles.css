@@ -435,12 +435,18 @@ min-height: 16px;
 }
 
 .blog {
+  display: flex;
+  flex-direction: column;
+  padding-top: 32px;
+  padding-left: 32px;
+  gap: 12px;
   background-image: url(../images/raster/background-images/news.jpg);
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
 
-.blog span {
+.blog-description {
+  display: block;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -448,25 +454,40 @@ min-height: 16px;
 }
 
 .blog-link {
+  display: block;
   color: #2D3440;
   text-decoration: none;
 }
 
 .subscribe {
+  display: flex;
+  flex-direction: column;
   background-image: url(../images/raster/background-images/line.jpg);
-  background-size: 100% auto;
   background-repeat: no-repeat;
+  height: 224px;
+  padding: 6px;
 }
 
 .subscribe-background {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background-color: #FFFFFF;
-  margin: 6px;
+  padding: 26px;
+  height: 100%;
 }
 
-.subscribe p {
+.subscribe-description {
+  display: block;
+  margin: 0;
   font-size: 16px;
   line-height: 22px;
   color: #565C66;
+}
+
+.subscribe-form {
+  display: flex;
+  justify-content: space-between;
 }
 
 .communication-form {
