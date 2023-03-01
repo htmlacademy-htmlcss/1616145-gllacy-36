@@ -497,6 +497,7 @@ img {
 .communication-form {
   display: flex;
   flex-direction: column;
+  align-items: start;
   justify-content: space-between;
   background-color: #FCFCFC;
   padding: 40px 40px 42px 40px;
@@ -506,6 +507,18 @@ img {
 .communication-form-text {
   font-size: 16px;
   line-height: 22px;
+  color: #565C66;
+  text-align: left;
+  margin: 0;
+}
+
+.communication-form-text-margin {
+  margin-top: 24px;
+}
+
+.form-contacts-description {
+  font-size: 14px;
+  line-height: 20px;
   color: #565C66;
   text-align: left;
   margin: 0;
@@ -556,7 +569,15 @@ img {
   font-weight: 700;
   color: #2D3440;
   text-decoration: none;
+  margin-top: 12px;
 }
+
+.contacts-important  a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
 
 
 /* Объединить свойства у блоков delivery и contacts: display и margin. */
@@ -611,16 +632,14 @@ img {
 }
 
 .contacts {
-  display: grid;
-  height: 492px;
+  display: flex;
+  padding: 64px;
 }
 
-.form-contacts {
-  width: 343px;
-  height: 364px;
-  margin: 64px auto 64px 64px;
+.form-contacts-button {
+  align-self: center;
+  margin-top: 32px;
 }
-
 
 /* Footer */
 
