@@ -464,7 +464,6 @@ img {
   flex-direction: column;
   background-image: url(../images/raster/background-images/line.jpg);
   background-repeat: no-repeat;
-  height: 224px;
   padding: 6px;
 }
 
@@ -488,6 +487,11 @@ img {
 .subscribe-form {
   display: flex;
   justify-content: space-between;
+  gap: 14px;
+}
+
+.subscribe-form input {
+  flex-grow: 1;
 }
 
 .communication-form {
