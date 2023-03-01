@@ -121,10 +121,10 @@ img {
 
 .header-icon-button,
 .product-card-button {
-padding: 8px;
-border-radius: 30px;
-min-width: 16px;
-min-height: 16px;
+  padding: 8px;
+  border-radius: 30px;
+  min-width: 16px;
+  min-height: 16px;
 }
 
 .social-button {
@@ -491,7 +491,12 @@ min-height: 16px;
 }
 
 .communication-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background-color: #FCFCFC;
+  padding: 40px 40px 42px 40px;
+
 }
 
 .communication-form-text {
@@ -499,6 +504,7 @@ min-height: 16px;
   line-height: 22px;
   color: #565C66;
   text-align: left;
+  margin: 0;
 }
 
 .delivery {
@@ -551,9 +557,53 @@ min-height: 16px;
 
 /* Объединить свойства у блоков delivery и contacts: display и margin. */
 
-.form-delivery {
-width: 500px;
-height: 406px;
+.delivery-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.delivery-form-list {
+  display: grid;
+  grid-template-columns: 117px 287px;
+  gap: 20px 16px;
+}
+
+.delivery-form-input {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+.delivery-form-input input {
+  height: 48px;
+  margin-top: 8px;
+}
+
+.text-delivery {
+  grid-column: 1 / -1;
+}
+
+.delivery-date {
+  grid-column: 1 / 2;
+  margin: 0;
+  width: auto;
+}
+
+.delivery-phone {
+  grid-column: 2 / 3;
+  margin: 0;
+  width: auto;
+}
+
+.delivery-address {
+  grid-column: 1/ -1;
+  margin: 0;
+  width: auto;
+}
+
+.delivery-form-button {
+  align-self: center;
+  margin-top: 32px;
 }
 
 .contacts {
@@ -591,6 +641,7 @@ height: 406px;
   padding: 0;
   list-style-type: none;
 }
+
 .footer-menu {
   display: grid;
   grid-template-columns: auto auto;
@@ -634,7 +685,7 @@ height: 406px;
 /* Catalog breadcrumbs */
 
 .catalog-inner-header {
-margin: 32px auto 40px;
+  margin: 32px auto 40px;
 }
 
 .breadcrumbs {
@@ -715,9 +766,9 @@ margin: 32px auto 40px;
 }
 
 .price {
-width: 196px;
-height: auto;
-margin: 0 24px 0 auto;
+  width: 196px;
+  height: auto;
+  margin: 0 24px 0 auto;
 }
 
 .fat {
