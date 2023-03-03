@@ -121,10 +121,10 @@ img {
 
 .header-icon-button,
 .product-card-button {
-padding: 8px;
-border-radius: 30px;
-min-width: 16px;
-min-height: 16px;
+  padding: 8px;
+  border-radius: 30px;
+  min-width: 32px;
+  min-height: 32px;
 }
 
 .social-button {
@@ -352,10 +352,25 @@ min-height: 16px;
 }
 
 .product-card {
-  background-color: #FCFCFC;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   width: 270px;
-  height: 332px;
+  padding-top: 51px;
+}
 
+.product-card-background {
+  background-color: #FCFCFC;
+  padding: 133px 40px 24px 40px;
+  position: relative;
+}
+
+.product-card-image {
+  position: absolute;
+  top: -51px;
+  left: 50%;
+  transform: translate(-50%, 0);
 }
 
 .product-card-link {
@@ -364,19 +379,33 @@ min-height: 16px;
 }
 
 .product-card-title {
+  display: block;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
+  text-align: center;
   color: #2D3440;
+  margin-bottom: 8px;
 }
 
 .product-description {
+  display: block;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
+  text-align: center;
   color: #565C66;
+  margin: 0;
+  margin-bottom: 16px;
+  width: 190px;
+}
+
+.add-to-cart {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .product-card-price {
@@ -464,7 +493,6 @@ min-height: 16px;
   flex-direction: column;
   background-image: url(../images/raster/background-images/line.jpg);
   background-repeat: no-repeat;
-  height: 224px;
   padding: 6px;
 }
 
@@ -488,10 +516,21 @@ min-height: 16px;
 .subscribe-form {
   display: flex;
   justify-content: space-between;
+  gap: 14px;
+}
+
+.subscribe-form input {
+  flex-grow: 1;
 }
 
 .communication-form {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
   background-color: #FCFCFC;
+  padding: 40px 40px 42px 40px;
+
 }
 
 .communication-form-text {
@@ -499,6 +538,19 @@ min-height: 16px;
   line-height: 22px;
   color: #565C66;
   text-align: left;
+  margin: 0;
+}
+
+.communication-form-text-margin {
+  margin-top: 24px;
+}
+
+.form-contacts-description {
+  font-size: 14px;
+  line-height: 20px;
+  color: #565C66;
+  text-align: left;
+  margin: 0;
 }
 
 .delivery {
@@ -546,27 +598,78 @@ min-height: 16px;
   font-weight: 700;
   color: #2D3440;
   text-decoration: none;
+  margin-top: 12px;
+  width: 263px;
 }
+
+.contacts-important  a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
 
 
 /* Объединить свойства у блоков delivery и contacts: display и margin. */
 
-.form-delivery {
-width: 500px;
-height: 406px;
+.delivery-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.delivery-form-list {
+  display: grid;
+  grid-template-columns: 117px 287px;
+  gap: 20px 16px;
+}
+
+.delivery-form-input {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+.delivery-form-input input {
+  height: 48px;
+  margin-top: 8px;
+}
+
+.text-delivery {
+  grid-column: 1 / -1;
+}
+
+.delivery-date {
+  grid-column: 1 / 2;
+  margin: 0;
+  width: auto;
+}
+
+.delivery-phone {
+  grid-column: 2 / 3;
+  margin: 0;
+  width: auto;
+}
+
+.delivery-address {
+  grid-column: 1/ -1;
+  margin: 0;
+  width: auto;
+}
+
+.delivery-form-button {
+  align-self: center;
+  margin-top: 32px;
 }
 
 .contacts {
-  display: grid;
-  height: 492px;
+  display: flex;
+  padding: 64px;
 }
 
-.form-contacts {
-  width: 343px;
-  height: 364px;
-  margin: 64px auto 64px 64px;
+.form-contacts-button {
+  align-self: center;
+  margin-top: 32px;
 }
-
 
 /* Footer */
 
@@ -591,6 +694,7 @@ height: 406px;
   padding: 0;
   list-style-type: none;
 }
+
 .footer-menu {
   display: grid;
   grid-template-columns: auto auto;
@@ -634,7 +738,7 @@ height: 406px;
 /* Catalog breadcrumbs */
 
 .catalog-inner-header {
-margin: 32px auto 40px;
+  margin: 32px auto 40px;
 }
 
 .breadcrumbs {
@@ -715,9 +819,9 @@ margin: 32px auto 40px;
 }
 
 .price {
-width: 196px;
-height: auto;
-margin: 0 24px 0 auto;
+  width: 196px;
+  height: auto;
+  margin: 0 24px 0 auto;
 }
 
 .fat {
