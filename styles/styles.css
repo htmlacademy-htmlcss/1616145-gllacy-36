@@ -83,6 +83,7 @@ img {
   font-style: normal;
   font-weight: 700;
   text-decoration: none;
+  border: 0;
 }
 
 .main-button {
@@ -114,7 +115,7 @@ img {
   padding: 8px 32px;
 }
 
-.icon-text-batton {
+.icon-text-button {
   padding: 6px 16px;
   border-radius: 30px;
 }
@@ -314,12 +315,14 @@ img {
   padding: 36px 217px 36px 36px;
 }
 
+
 .gifts-description {
   display: block;
   margin: 0;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
+  flex-grow: 1;
 }
 
 .raspberry {
@@ -327,9 +330,6 @@ img {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right;
-  width: 219px;
-  height: 268px;
-
 }
 
 .marshmallow {
@@ -337,8 +337,6 @@ img {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right;
-  width: 219px;
-  height: 268px;
 }
 
 .product-list {
@@ -456,7 +454,6 @@ img {
 .blog-and-subscribe {
   display: flex;
   gap: 30px;
-  height: 224px;
 }
 
 .blog-and-subscribe-item {
@@ -499,7 +496,7 @@ img {
 .subscribe-background {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  gap: 42px;
   background-color: #FFFFFF;
   padding: 26px;
   height: 100%;
@@ -556,7 +553,6 @@ img {
 .delivery {
   display: flex;
   flex-direction: row;
-  height: 534px;
   justify-content: space-between;
   padding-left: 100px;
   padding-right: 64px;
@@ -565,6 +561,10 @@ img {
   background-image: url(../images/raster/background-images/delivery.jpg);
   background-size: 100% auto;
   background-repeat: no-repeat;
+}
+
+.form-delivery {
+  width: 500px;
 }
 
 .delivery-text {
@@ -636,6 +636,7 @@ img {
 
 .text-delivery {
   grid-column: 1 / -1;
+  margin-bottom: 32px;
 }
 
 .delivery-date {
