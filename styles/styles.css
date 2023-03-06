@@ -201,6 +201,11 @@ outline: none;
   background-color: #FCFCFC;
 }
 
+.navigation-link-dropdown {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
 
 .navigation-user {
   display: flex;
