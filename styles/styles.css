@@ -126,6 +126,7 @@ img {
 }
 
 .header-icon-button {
+  display: flex;
   padding: 8px;
   border-radius: 50%;
   text-decoration: none;
