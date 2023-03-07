@@ -785,7 +785,8 @@ outline: none;
 }
 
 .footer-menu-link svg {
-  transform: translateX(-8px);
+  position: absolute;
+  transform: translate(-24px, 2px);
 }
 
 .footer-copyright {
