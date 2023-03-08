@@ -129,10 +129,11 @@ img {
   background-color: #FF2F64;
   border-color: rgba(255, 47, 100, 0.3);
   border-radius: 26px;
-  box-shadow: 0 0 0 4px gba(255, 47, 100, 0.3), 0px 4px 12px rgba(45, 52, 64, 0.1);
+  box-shadow: 0 0 0 4px rgba(255, 47, 100, 0.3), 0px 4px 12px rgba(45, 52, 64, 0.1);
 }
 
 .additional-button:hover {
+  color: #2D3440;
   background-color: rgba(252, 252, 252, 0.3);
   box-shadow: 0 0 0 4px #FF2F64;
 }
@@ -285,14 +286,13 @@ img {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  color: #B9B9B9;
+  color: #2D3440;
   border: 1px solid #B9B9B9;
   border-radius: 4px;
 }
 
-.input-field:default {
-  color: #2D3440;
-  border: 1px solid #B9B9B9;
+.input-field::placeholder {
+  color: #B9B9B9;
 }
 
 .input-field:hover {
@@ -302,16 +302,18 @@ img {
 
 .input-field:focus {
   color: #2D3440;
-  border: 2px solid #2D3440;
+  border: 2px solid transparent;
   padding: 12px 14px 12px;
+  outline-color: #2D3440;
+  outline-width: 2px;
 }
 
-.input-field-error {
+.input-field:invalid {
   color: #2D3440;
   border: 1px solid #EA5454;
 }
 
-.input-field-error-hover {
+.input-field:invalid:hover {
   color: #2D3440;
   border: 2px solid #EA5454;
   padding: 12px 14px 12px;
@@ -323,7 +325,7 @@ img {
   border: 1px solid #B9B9B9;
 }
 
-.input-field-disabled-hover {
+.input-field:disabled:hover {
   background: #E7E7E7;
   color: #2D3440;
   border: 1px solid #B9B9B9;
@@ -721,9 +723,9 @@ img {
 .subscribe-background {
   display: flex;
   flex-direction: column;
-  gap: 42px;
+  gap: 44px;
   background-color: #FFFFFF;
-  padding: 26px;
+  padding: 26px 26px 28px;
   height: 100%;
 }
 
