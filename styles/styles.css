@@ -160,6 +160,26 @@ img {
   background-color: rgba(252, 252, 252, 0.3);
   border-color: #FCFCFC;
   padding: 8px 32px;
+  border-radius: 20px;
+  box-shadow: 0 0 0 2px #FCFCFC;
+}
+
+.button-third:hover {
+  background-color: #FCFCFC;
+  box-shadow: 0 0 0 2px rgba(252, 252, 252, 0.3);
+}
+
+.button-third:active {
+  background-color: rgba(252, 252, 252, 0.5);
+}
+
+.button-third:focus {
+  background-color: rgba(252, 252, 252, 0.3);
+  box-shadow: 0 0 0 2px #2D3440;
+}
+
+.button-third:disabled {
+  opacity: 0.4;
 }
 
 .icon-text-button {
