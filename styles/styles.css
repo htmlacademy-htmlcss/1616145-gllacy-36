@@ -120,15 +120,14 @@ img {
   box-shadow: 0 0 0 4px rgba(252, 252, 252, 0.4);
 }
 
-
 .additional-button {
   font-size: 16px;
   line-height: 20px;
   text-align: center;
   color: #FCFCFC;
+  padding: 12px 32px;
   background-color: #FF2F64;
   border-color: rgba(255, 47, 100, 0.3);
-  padding: 12px 32px;
   border-radius: 26px;
   box-shadow: 0 0 0 4px gba(255, 47, 100, 0.3), 0px 4px 12px rgba(45, 52, 64, 0.1);
 }
@@ -198,9 +197,40 @@ img {
 }
 
 .product-card-button {
+  position: relative;
+  display: flex;
   padding: 8px;
-  border-radius: 50%;
   text-decoration: none;
+  color: inherit;
+  border-radius: 50%;
+  fill: #FCFCFC;
+  background-color: #FF2F64;
+}
+
+.product-card-button:hover {
+  fill: #2D3440;
+  background-color: rgba(252, 252, 252, 0.3);
+  border: 2px solid #FF2F64;
+  padding: 6px;
+}
+
+.product-card-button:active {
+  fill: #2D3440;
+  background-color: #FFCBD8;
+  border: 2px solid #FF2F64;
+  padding: 6px;
+}
+
+.product-card-button:focus {
+  fill: #FCFCFC;
+  background-color: #FF2F64;
+  border: 2px solid #2D3440;
+  padding: 6px;
+}
+
+.product-card-button:disabled {
+  fill: #565C66;
+  background-color: #B9B9B9;
 }
 
 .social-button {
@@ -549,10 +579,6 @@ outline: none;
   font-size: 20px;
   line-height: 24px;
   color: #2D3440;
-}
-
-.product-card-button {
-  background-color: #FF2F64;
 }
 
 .about {
