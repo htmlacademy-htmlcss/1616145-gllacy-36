@@ -925,11 +925,16 @@ outline: none;
   font-weight: 700;
 }
 
-.breadcrumbs-item ~ .breadcrumbs-item
-
-
-.breadcrumbs-item:not(:last-child) {
-  margin-right: 8px;
+.breadcrumbs-item ~ .breadcrumbs-item::before {
+  display: inline-block;
+  content: "";
+  margin: 4px 8px 0;
+  background-image: url(../images/vector/outline-icon/chevrons-right.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 12px;
+  height: 12px;
 }
 
 .breadcrumbs-link {
@@ -963,6 +968,7 @@ outline: none;
 
 .group-two {
   display: flex;
+  align-items: center;
   height: 68px;
 }
 
