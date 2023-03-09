@@ -828,6 +828,7 @@ img {
   background-image: url(../images/raster/background-images/news.jpg);
   background-size: 100% auto;
   background-repeat: no-repeat;
+  border-radius: 16px;
 }
 
 .blog-description {
@@ -850,6 +851,7 @@ img {
   background-image: url(../images/raster/background-images/line.jpg);
   background-repeat: no-repeat;
   padding: 6px;
+  border-radius: 16px;
 }
 
 .subscribe-background {
@@ -886,7 +888,7 @@ img {
   justify-content: space-between;
   background-color: #FCFCFC;
   padding: 40px 40px 42px 40px;
-
+  border-radius: 8px;
 }
 
 .communication-form-text {
@@ -920,10 +922,12 @@ img {
   background-image: url(../images/raster/background-images/delivery.jpg);
   background-size: 100% auto;
   background-repeat: no-repeat;
+  border-radius: 16px;
 }
 
 .form-delivery {
   width: 500px;
+  box-shadow: 0 15px 40px 0 rgba(45, 52, 64, 0.12);
 }
 
 .delivery-text {
@@ -952,6 +956,7 @@ img {
   background-image: url(../images/raster/background-images/feedback.jpg);
   background-size: 100% auto;
   background-repeat: no-repeat;
+  border-radius: 16px;
 }
 
 .contacts-important {
@@ -1026,6 +1031,10 @@ img {
 .contacts {
   display: flex;
   padding: 64px;
+}
+
+.contacts div {
+  box-shadow: 0 8px 16px 0 rgba(45, 52, 64, 0.12);
 }
 
 .form-contacts-button {
