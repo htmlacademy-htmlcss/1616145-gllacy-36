@@ -528,6 +528,7 @@ img {
   font-size: 32px;
   line-height: 46px;
   text-align: left;
+  margin: 0;
 }
 
 .banner-title {
@@ -920,7 +921,7 @@ img {
   line-height: 22px;
   color: #565C66;
   text-align: left;
-  margin: 0;
+  margin: 24px 0 0 0;
 }
 
 .communication-form-text-margin {
@@ -976,13 +977,6 @@ img {
   z-index: 2;
   width: 371px;
   padding-top: 103px;
-}
-
-.delivery-text h2,
-.delivery-text p {
-  display: flex;
-  flex-direction: column;
-  margin: 0;
 }
 
 .input-label-text {
