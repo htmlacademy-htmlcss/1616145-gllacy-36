@@ -320,12 +320,39 @@ img {
   box-shadow: inset 0 0 0 1px #2D3440;
 }
 
-
-
-
 .slider-button {
-  position: absolute;
+  border: none;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 2px #FCFCFC;
+  background-color: rgba(252, 252, 252, 0.3);
+  fill: #FCFCFC;
+}
 
+.slider-button:hover {
+  background-color: #FCFCFC;
+  fill: #2D3440;
+}
+
+.slider-button:active {
+  background-color: rgba(252, 252, 252, 0.5);
+  fill: #2D3440;
+  box-shadow: inset 0 0 0 2px transparent;
+}
+
+.slider-button:focus {
+  background-color: rgba(252, 252, 252, 0.3);
+  fill: #2D3440;
+  box-shadow: inset 0 0 0 2px #2D3440;
+}
+
+.slider-button:disabled {
+  opacity: 0.4;
 }
 
 /* Input field */
@@ -549,14 +576,14 @@ img {
   font-weight: 900;
   font-size: 36px;
   line-height: 46px;
-  margin: 0;
+  margin: 0 0 24px;
 }
 
 .slider-text-description {
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
-  margin: 0;
+  margin: 0 0 48px;
 }
 
 .slider-list {
@@ -573,6 +600,24 @@ img {
   position: absolute;
 }
 
+.slider-information {
+  position: absolute;
+  top: 136px;
+  left: 70px;
+  max-width: 470px;
+}
+
+.slider-prev {
+  position: absolute;
+  top: 258px;
+  left: 542px;
+}
+
+.slider-next {
+  position: absolute;
+  top: 258px;
+  right: 278px;
+}
 
 .gifts-list {
   display: flex;
