@@ -595,9 +595,22 @@ img {
   height: 100%;
 }
 
+.slider-image-wrapper {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 312px;
+  height: 312px;
+  border-radius: 50%;
+  background-color: #FFCBD8;
+  top: 121px;
+  left: 561px;
+}
+
 .slider-image {
   position: absolute;
   max-height: 507px;
+  top: -100px;
 }
 
 .slider-information {
