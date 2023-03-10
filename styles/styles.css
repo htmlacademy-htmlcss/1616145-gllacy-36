@@ -556,6 +556,7 @@ img {
 .slider-list {
   display: flex;
   height: 100%;
+  position: relative;
 }
 
 .hero-block ol {
@@ -598,6 +599,7 @@ img {
 .slider-image-wrapper {
   display: flex;
   justify-content: center;
+  align-items: center;
   position: absolute;
   width: 312px;
   height: 312px;
@@ -611,7 +613,6 @@ img {
   display: block;
   position: absolute;
   max-height: 507px;
-  top: -100px;
 }
 
 .slider-information {
@@ -619,6 +620,25 @@ img {
   top: 136px;
   left: 70px;
   max-width: 470px;
+}
+
+.slider-item-second .slider-information,
+.slider-item-third .slider-information {
+display: none;
+}
+
+.slider-item-second {
+  position: absolute;
+  transform: scale(40%);
+  opacity: 0.4;
+  left: 28%;
+}
+
+.slider-item-third {
+  position: absolute;
+  transform: scale(40%);
+  opacity: 0.4;
+  left: 41%
 }
 
 .slider-prev {
