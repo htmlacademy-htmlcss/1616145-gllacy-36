@@ -282,7 +282,7 @@ img {
   background-color: #FCFCFC;
 }
 
-.navigation-user-link-current {
+.navigation-user-link-opened {
   background-color: #FF4A78;
   color: #FCFCFC;
 }
@@ -554,9 +554,10 @@ img {
 }
 
 .slider-list {
+  position: relative;
   display: flex;
   height: 100%;
-  position: relative;
+  width: 100%;
 }
 
 .hero-block ol {
@@ -584,11 +585,6 @@ img {
   font-size: 18px;
   line-height: 24px;
   margin: 0 0 48px;
-}
-
-.slider-list {
-  width: 100%;
-  margin: 0;
 }
 
 .slider-item {
@@ -629,16 +625,16 @@ display: none;
 
 .slider-item-second {
   position: absolute;
-  transform: scale(40%);
+  transform: scale(33%);
   opacity: 0.4;
-  left: 28%;
+  left: 30%;
 }
 
 .slider-item-third {
   position: absolute;
-  transform: scale(40%);
+  transform: scale(33%);
   opacity: 0.4;
-  left: 41%
+  left: 42%
 }
 
 .slider-prev {
@@ -876,14 +872,14 @@ display: none;
 .blog {
   display: flex;
   flex-direction: column;
-  padding-top: 32px;
+  padding-top: 33px;
   padding-left: 32px;
   gap: 12px;
   background-image: url(../images/raster/background-images/news.jpg);
   background-repeat: no-repeat;
   border-radius: 16px;
-  background-size: 690px 478px;
-  background-position: -58px -130px;
+  background-size: 676px auto;
+  background-position: -22px -113px;
 }
 
 .blog-description {
@@ -933,11 +929,16 @@ display: none;
 .subscribe-form {
   display: flex;
   justify-content: space-between;
-  gap: 14px;
+  gap: 16px;
+  margin-right: 4px;
 }
 
 .subscribe-form input {
   flex-grow: 1;
+}
+
+.button-subscribe-form {
+  width: 152px;
 }
 
 .communication-form {
@@ -950,12 +951,17 @@ display: none;
   border-radius: 8px;
 }
 
+.delivery-description,
 .communication-form-text {
   font-size: 16px;
   line-height: 22px;
   color: #565C66;
   text-align: left;
-  margin: 24px 0 0 0;
+  margin: 0;
+}
+
+.delivery-description {
+  margin-top: 24px;
 }
 
 .communication-form-text-margin {
@@ -990,7 +996,7 @@ display: none;
   display: block;
   content: "";
   background-image: url(../images/raster/background-images/delivery.jpg);
-  background-size: 1228px 812px;
+  background-size: 1228px auto;
   background-repeat: no-repeat;
   width: 100%;
   height: 100%;
@@ -1110,7 +1116,6 @@ display: none;
 }
 
 .form-contacts-button {
-  align-self: center;
   margin-top: 32px;
 }
 
