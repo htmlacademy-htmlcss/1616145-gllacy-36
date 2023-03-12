@@ -1254,8 +1254,10 @@ img {
 
 /* Catalog filters */
 
-fieldset ~ fieldset {
-  margin: 24px;
+.catalog-filter-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 .catalog-filter-group {
@@ -1271,19 +1273,17 @@ fieldset ~ fieldset {
   display: flex;
   margin: 0;
   padding: 0;
-  margin-right: 16px;
 }
 
 .group-one {
   display: flex;
-  height: 64px;
-  margin-bottom: 16px;
+  gap: 24px;
 }
 
 .group-two {
   display: flex;
-  align-items: center;
-  height: 68px;
+  gap: 16px;
+  align-items: flex-end;
 }
 
 .catalog-filter {
@@ -1322,10 +1322,6 @@ fieldset ~ fieldset {
   padding: 0;
   width: auto;
   height: auto;
-}
-
-.ingredient {
-  margin-right: 16px;
 }
 
 .sorting {
@@ -1388,6 +1384,7 @@ fieldset ~ fieldset {
 
 .range {
   display: flex;
+  align-items: center;
   padding: 10px 16px;
   width: 196px;
   background-color: rgba(252, 252, 252, 0.3);
@@ -1446,6 +1443,101 @@ fieldset ~ fieldset {
   right: 0;
 }
 
+.filter-ingredient-background,
+.filter-fat-background {
+  display: flex;
+  background-color: rgba(252, 252, 252, 0.3);
+  border-radius: 20px;
+  align-items: center;
+}
+
+.filter-fat-background {
+  padding: 8px 24px;
+}
+
+.filter-ingredient-background {
+  padding: 9px 24px;
+}
+
+.catalog-filter-list {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+
+.control {
+  position: relative;
+  display: block;
+  padding-left: 25px;
+}
+
+.control-mark {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  fill: #2D3440;
+}
+
+.control-mark:hover {
+  fill: #FCFCFC;
+}
+
+.control-input:disabled + .control-mark {
+  opacity: 0.4;
+}
+
+.control-input[type="checkbox"]:checked + .control-mark::before {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-image: url(../images/vector/outline-icon/check-on.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  content: "";
+}
+
+
+/* Radiobutton */
+
+
+.control-radio {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #2D3440;
+  border-radius: 50%;
+}
+
+
+.control-input[type="radio"]:checked + .control-radio::before {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 6px;
+  height: 6px;
+  background-color: #2D3440;
+  border-radius: 50%;
+  content: "";
+}
+
+.control:hover .control-radio {
+  border-color: #FCFCFC;
+}
+
+.control-input:disabled + .control-radio {
+  border-color: rgba(0, 0, 0, 0.4);
+}
+
+
+.catalog-filter-button {
+  width: 185px;
+}
 
 /* Catalog Pagination */
 
@@ -1529,6 +1621,7 @@ fieldset ~ fieldset {
   height: 1px;
   background-color: rgba(252, 252, 252, 0.3);
 }
+
 
 
 /* Popover */
