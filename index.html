@@ -18,7 +18,7 @@
               alt="Логотип магазина «Глейси».">
           </a>
           <ul class="navigation-list">
-            <li class="navigation-item">
+            <li class="navigation-item dropdown-list-catalog">
               <a class="navigation-link navigation-link-dropdown" href="catalog.html">
                 Каталог
                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
@@ -29,12 +29,13 @@
                 </svg>
               </a>
 
-              <!-- Добавлю раздел в соответствующем уроке курса
+              <!-- Каталог: выпадающий список -->
+                     <div class="popover-list popover-catalog-list">
                     <ul class="catalog-list">
                       <li class="catalog-list-item">
-                        <a class="catalog-link" href="new.html">Новинки</a>
+                        <a class="catalog-link catalog-new" href="new.html">Новинки</a>
                       </li>
-                      <li class="catalog-list-item">
+                      <li class="catalog-list-item catalog-list-item-current ">
                         <a class="catalog-link" href="cream.html">Сливочное</a>
                       </li>
                       <li class="catalog-list-item">
@@ -47,7 +48,6 @@
                         <a class="catalog-link" href="melorin.html">Мелорин</a>
                       </li>
                     </ul>
-                     -->
             </li>
             <li class="navigation-item">
               <a class="navigation-link" href="#">Доставка и оплата</a>
@@ -76,11 +76,11 @@
 
             <!-- Поповер: поиск -->
 
-            <div class="popover popover-search" hidden>
-              <div class="popover-content">
+            <div class="popover popover-search" >
+              <form class="popover-content">
                 <input class="input input-search" type="text" name="search" id="search" placeholder="Поиск по сайту">
-                <span class="clear"></span>
-              </div>
+                <input class="clear" type="reset" value="">
+              </form>
             </div>
           </li>
 
@@ -97,7 +97,7 @@
 
             <!-- Поповер: вход -->
 
-            <div class="popover popover-enter">
+            <div class="popover popover-enter" hidden>
               <div class="popover-content">
                 <h2 class="popover-title">Личный кабинет</h2>
                 <form class="enter-form" action="#" method="post">

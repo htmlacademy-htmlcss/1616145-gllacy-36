@@ -1246,7 +1246,7 @@ img {
 }
 
 .navigation-link-current {
-  text-decoration: underline;
+  border-bottom: 1px solid #2D3440;
 }
 
 
@@ -1349,7 +1349,19 @@ fieldset ~ fieldset {
   color: #2D3440;
   text-decoration: none;
   fill: currentColor;
+  background-color: rgba(252, 252, 252, 0.3);
+  border-radius: 20px;
+  border: 0;
+  outline: 0;
+}
 
+.catalog-dropdown:hover {
+  background-color: rgba(252, 252, 252, 0.5);
+}
+
+.catalog-dropdown:focus {
+  background-color: rgba(252, 252, 252, 0.4);
+  box-shadow: inset 0 0 0 2px #FCFCFC;
 }
 
 .range {
@@ -1392,8 +1404,8 @@ fieldset ~ fieldset {
 }
 
 .range-toggle:active {
-background-color: #2D3440;
-box-shadow: transparent;
+  background-color: #2D3440;
+  box-shadow: transparent;
 }
 
 .range-toggle:focus {
@@ -1508,7 +1520,18 @@ box-shadow: transparent;
   top: 40px;
   right: 0;
   z-index: 1;
-  box-sizing: border-box;
+  font-family: inherit;
+  color: #2D3440;
+  background-color: #FCFCFC;
+  border-radius: 4px;
+  box-shadow: 0 15px 40px 0 rgba(45, 52, 64, 0.12);
+}
+
+.popover-list {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  z-index: 1;
   font-family: inherit;
   color: #2D3440;
   background-color: #FCFCFC;
@@ -1551,6 +1574,48 @@ box-shadow: transparent;
   display: flex;
   flex-direction: column;
   position: relative;
+}
+
+
+.dropdown-list-catalog {
+  position: relative;
+}
+
+.catalog-list {
+  padding: 8px 0;
+  list-style-type: none;
+}
+
+.catalog-list-item {
+  padding: 8px 12px 8px 16px;
+  width: 135px;
+}
+
+.catalog-list-item:hover {
+  background-color: #FFCBD8;
+}
+
+.catalog-list-item:active {
+  background-color: #FF7799;
+}
+
+.catalog-list-item-current {
+  background-color: #FF4A78;
+  color: #FCFCFC;
+}
+
+.catalog-link {
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 20px;
+  color: #2D3440;
+  text-decoration: none;
+}
+
+
+
+.catalog-new {
+  font-weight: 700;
 }
 
 .basket-items-list {
@@ -1621,6 +1686,7 @@ box-shadow: transparent;
 
 .popover-search {
   width: 356px;
+  height: 96px;
   padding: 24px 16px;
 }
 
@@ -1632,14 +1698,24 @@ box-shadow: transparent;
 
 .clear {
   position: absolute;
-  top: 35%;
+  display: none;
+  top: 50%;
+  transform: translateY(-50%);
   right: 13px;
   width: 16px;
   height: 16px;
   cursor: pointer;
   background-image: url(../images/vector/outline-icon/cross.svg);
+  background-position: center;
   opacity: 0.4;
+  border: 0;
+  background-color: transparent;
 }
+
+.input-search:not(:placeholder-shown) + .clear {
+display: block;
+}
+
 
 .popover-enter {
   width: 420px;
