@@ -63,7 +63,7 @@
             <a class="tel-header" href="tel:+78005558628">+7 800 555-86-28</a>
           </li>
           <li class="navigation-user-item">
-            <a class="navigation-user-link header-icon-button" href="#">
+            <a class="navigation-user-link header-icon-button navigation-user-link-opened" href="#">
               <span class="visually-hidden">Поиск</span>
               <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                 fill="none" viewBox="0 0 16 16">
@@ -72,9 +72,23 @@
                   clip-rule="evenodd" />
               </svg>
             </a>
+
+
+            <!-- Поповер: поиск -->
+
+            <div class="popover popover-search">
+              <div class="popover-content">
+                <input class="input input-search" type="text" name="search" id="search" placeholder="Поиск по сайту">
+                <span class="clear"></span>
+              </div>
+            </div>
+
+
+
+
           </li>
           <li class="navigation-user-item">
-            <a class="navigation-user-link icon-text-button" href="#">
+            <a class="navigation-user-link icon-text-button navigation-user-link-opened" href="#">
               <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                 fill="none" viewBox="0 0 16 16">
                 <path fill="currentColor" fill-rule="evenodd"
@@ -95,7 +109,6 @@
               </svg>
               <span class="basket">2 товара</span>
             </a>
-
 
             <!-- Поповер: пустая корзина -->
 
@@ -450,7 +463,7 @@
                 Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
               <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
                 <label class="visually-hidden" for="subscribe-email">Email</label>
-                <input class="input-field" placeholder="email@example.com" type="email" name="subscribe-email"
+                <input class="input input-field" placeholder="email@example.com" type="email" name="subscribe-email"
                   id="subscribe-email">
                 <button class="button additional-button additional-button-text button-subscribe-form"
                   type="submit">Отправить</button>
@@ -490,12 +503,12 @@
                     </svg>
 
                   </label>
-                  <input class="input-field" type="text" id="delivery-date" name="delivery-date"
+                  <input class="input input-field" type="text" id="delivery-date" name="delivery-date"
                     placeholder="01.04.2020">
                 </p>
                 <p class="delivery-form-input delivery-phone">
                   <label class="input-label-text" for="delivery-phone">Телефон</label>
-                  <input class="input-field" type="tel" id="delivery-phone" name="delivery-phone"
+                  <input class="input input-field" type="tel" id="delivery-phone" name="delivery-phone"
                     placeholder="+7 800 999-00-00">
                 </p>
                 <p class="delivery-form-input delivery-address">
@@ -514,7 +527,7 @@
                       </defs>
                     </svg>
                   </label>
-                  <input class="input-field" type="text" id="delivery-address" name="delivery-address"
+                  <input class="input input-field" type="text" id="delivery-address" name="delivery-address"
                     placeholder="ул. Большая Конюшенная, 19/8">
                 </p>
               </div>
