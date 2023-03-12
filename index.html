@@ -30,26 +30,26 @@
               </a>
 
               <!-- Каталог: выпадающий список -->
-                     <div class="popover-list popover-catalog-list" hidden>
-                    <ul class="catalog-list">
-                      <li class="catalog-list-item catalog-new">
-                        <a class="catalog-link " href="new.html">Новинки</a>
-                      </li>
-                      <li class="catalog-list-decor">
-                      </li>
-                      <li class="catalog-list-item catalog-list-item-current">
-                        <a class="catalog-link" href="cream.html">Сливочное</a>
-                      </li>
-                      <li class="catalog-list-item">
-                        <a class="catalog-link" href="sherbets.html">Щербеты</a>
-                      </li>
-                      <li class="catalog-list-item">
-                        <a class="catalog-link" href="fruit.html">Фруктовый лед</a>
-                      </li>
-                      <li class="catalog-list-item">
-                        <a class="catalog-link" href="melorin.html">Мелорин</a>
-                      </li>
-                    </ul>
+              <div class="popover-list popover-catalog-list" hidden>
+                <ul class="catalog-list">
+                  <li class="catalog-list-item catalog-new">
+                    <a class="catalog-link " href="new.html">Новинки</a>
+                  </li>
+                  <li class="catalog-list-decor">
+                  </li>
+                  <li class="catalog-list-item catalog-list-item-current">
+                    <a class="catalog-link" href="cream.html">Сливочное</a>
+                  </li>
+                  <li class="catalog-list-item">
+                    <a class="catalog-link" href="sherbets.html">Щербеты</a>
+                  </li>
+                  <li class="catalog-list-item">
+                    <a class="catalog-link" href="fruit.html">Фруктовый лед</a>
+                  </li>
+                  <li class="catalog-list-item">
+                    <a class="catalog-link" href="melorin.html">Мелорин</a>
+                  </li>
+                </ul>
             </li>
             <li class="navigation-item">
               <a class="navigation-link" href="#">Доставка и оплата</a>
@@ -505,23 +505,19 @@
             <form class="delivery-form" action="https://echo.htmlacademy.ru/" method="post">
               <div class="delivery-form-list">
                 <p class="delivery-form-input delivery-date">
-                  <label class="input-label-text" for="delivery-date">
-                    Дата
-                    <svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 14 14" fill="none"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <g clip-path="url(#clip0_18758_945)">
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                          d="M7.00026 2.12508C4.30774 2.12508 2.12502 4.3078 2.12502 7.00032C2.12502 9.69284 4.30774 11.8756 7.00026 11.8756C9.69278 11.8756 11.8755 9.69284 11.8755 7.00032C11.8755 4.3078 9.69278 2.12508 7.00026 2.12508ZM0.791687 7.00032C0.791687 3.57142 3.57136 0.791748 7.00026 0.791748C10.4292 0.791748 13.2088 3.57142 13.2088 7.00032C13.2088 10.4292 10.4292 13.2089 7.00026 13.2089C3.57136 13.2089 0.791687 10.4292 0.791687 7.00032ZM7.00007 6.3334C7.36826 6.3334 7.66674 6.63188 7.66674 7.00007V9.21683C7.66674 9.58502 7.36826 9.8835 7.00007 9.8835C6.63188 9.8835 6.33341 9.58502 6.33341 9.21683V7.00007C6.33341 6.63188 6.63188 6.3334 7.00007 6.3334ZM7.00007 4.11665C6.63188 4.11665 6.33341 4.41513 6.33341 4.78332C6.33341 5.1515 6.63188 5.44998 7.00007 5.44998H7.0059C7.37409 5.44998 7.67257 5.1515 7.67257 4.78332C7.67257 4.41513 7.37409 4.11665 7.0059 4.11665H7.00007Z"
-                          fill="#2D3440" />
-                      </g>
-                      <defs>
-                        <clipPath id="clip0_18758_945">
-                          <rect width="14" height="14" fill="white" />
-                        </clipPath>
-                      </defs>
-                    </svg>
-
-                  </label>
+                  <span class="form-label">
+                    <label class="input-label-text" for="delivery-date">Дата</label>
+                    <span class="tooltip tooltip-date ">
+                      <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date">
+                        <svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 14 14" fill="none"
+                          xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_18758_945)"><path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M7.00026 2.12508C4.30774 2.12508 2.12502 4.3078 2.12502 7.00032C2.12502 9.69284 4.30774 11.8756 7.00026 11.8756C9.69278 11.8756 11.8755 9.69284 11.8755 7.00032C11.8755 4.3078 9.69278 2.12508 7.00026 2.12508ZM0.791687 7.00032C0.791687 3.57142 3.57136 0.791748 7.00026 0.791748C10.4292 0.791748 13.2088 3.57142 13.2088 7.00032C13.2088 10.4292 10.4292 13.2089 7.00026 13.2089C3.57136 13.2089 0.791687 10.4292 0.791687 7.00032ZM7.00007 6.3334C7.36826 6.3334 7.66674 6.63188 7.66674 7.00007V9.21683C7.66674 9.58502 7.36826 9.8835 7.00007 9.8835C6.63188 9.8835 6.33341 9.58502 6.33341 9.21683V7.00007C6.33341 6.63188 6.63188 6.3334 7.00007 6.3334ZM7.00007 4.11665C6.63188 4.11665 6.33341 4.41513 6.33341 4.78332C6.33341 5.1515 6.63188 5.44998 7.00007 5.44998H7.0059C7.37409 5.44998 7.67257 5.1515 7.67257 4.78332C7.67257 4.41513 7.37409 4.11665 7.0059 4.11665H7.00007Z"
+                              fill="#2D3440" /></g><defs><clipPath id="clip0_18758_945"><rect width="14" height="14" fill="white" /></clipPath></defs>
+                        </svg>
+                        </button>
+                      <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите желаемую дату доставки</span>
+                    </span>
+                  </span>
                   <input class="input input-field" type="text" id="delivery-date" name="delivery-date"
                     placeholder="01.04.2020">
                 </p>
@@ -531,21 +527,19 @@
                     placeholder="+7 800 999-00-00">
                 </p>
                 <p class="delivery-form-input delivery-address">
-                  <label class="input-label-text" for="delivery-address">Адрес
-                    <svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 14 14" fill="none"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <g clip-path="url(#clip0_18758_945)">
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                          d="M7.00026 2.12508C4.30774 2.12508 2.12502 4.3078 2.12502 7.00032C2.12502 9.69284 4.30774 11.8756 7.00026 11.8756C9.69278 11.8756 11.8755 9.69284 11.8755 7.00032C11.8755 4.3078 9.69278 2.12508 7.00026 2.12508ZM0.791687 7.00032C0.791687 3.57142 3.57136 0.791748 7.00026 0.791748C10.4292 0.791748 13.2088 3.57142 13.2088 7.00032C13.2088 10.4292 10.4292 13.2089 7.00026 13.2089C3.57136 13.2089 0.791687 10.4292 0.791687 7.00032ZM7.00007 6.3334C7.36826 6.3334 7.66674 6.63188 7.66674 7.00007V9.21683C7.66674 9.58502 7.36826 9.8835 7.00007 9.8835C6.63188 9.8835 6.33341 9.58502 6.33341 9.21683V7.00007C6.33341 6.63188 6.63188 6.3334 7.00007 6.3334ZM7.00007 4.11665C6.63188 4.11665 6.33341 4.41513 6.33341 4.78332C6.33341 5.1515 6.63188 5.44998 7.00007 5.44998H7.0059C7.37409 5.44998 7.67257 5.1515 7.67257 4.78332C7.67257 4.41513 7.37409 4.11665 7.0059 4.11665H7.00007Z"
-                          fill="#2D3440" />
-                      </g>
-                      <defs>
-                        <clipPath id="clip0_18758_945">
-                          <rect width="14" height="14" fill="white" />
-                        </clipPath>
-                      </defs>
-                    </svg>
-                  </label>
+                  <span class="form-label">
+                    <label class="input-label-text" for="delivery-address">Адрес</label>
+                    <span class="tooltip tooltip-address">
+                      <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-address">
+                        <svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 14 14" fill="none"
+                          xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_18758_945)"><path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M7.00026 2.12508C4.30774 2.12508 2.12502 4.3078 2.12502 7.00032C2.12502 9.69284 4.30774 11.8756 7.00026 11.8756C9.69278 11.8756 11.8755 9.69284 11.8755 7.00032C11.8755 4.3078 9.69278 2.12508 7.00026 2.12508ZM0.791687 7.00032C0.791687 3.57142 3.57136 0.791748 7.00026 0.791748C10.4292 0.791748 13.2088 3.57142 13.2088 7.00032C13.2088 10.4292 10.4292 13.2089 7.00026 13.2089C3.57136 13.2089 0.791687 10.4292 0.791687 7.00032ZM7.00007 6.3334C7.36826 6.3334 7.66674 6.63188 7.66674 7.00007V9.21683C7.66674 9.58502 7.36826 9.8835 7.00007 9.8835C6.63188 9.8835 6.33341 9.58502 6.33341 9.21683V7.00007C6.33341 6.63188 6.63188 6.3334 7.00007 6.3334ZM7.00007 4.11665C6.63188 4.11665 6.33341 4.41513 6.33341 4.78332C6.33341 5.1515 6.63188 5.44998 7.00007 5.44998H7.0059C7.37409 5.44998 7.67257 5.1515 7.67257 4.78332C7.67257 4.41513 7.37409 4.11665 7.0059 4.11665H7.00007Z"
+                              fill="#2D3440" /></g><defs><clipPath id="clip0_18758_945"><rect width="14" height="14" fill="white" /></clipPath></defs>
+                        </svg>
+                        </button>
+                      <span class="tooltip-text" role="tooltip" id="tooltip-label-address">Введите название улицы, дома и квартиры</span>
+                    </span>
+                  </span>
                   <input class="input input-field" type="text" id="delivery-address" name="delivery-address"
                     placeholder="ул. Большая Конюшенная, 19/8">
                 </p>

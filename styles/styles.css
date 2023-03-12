@@ -1070,8 +1070,6 @@ img {
 
 
 
-/* Объединить свойства у блоков delivery и contacts: display и margin. */
-
 .delivery-form {
   display: flex;
   flex-direction: column;
@@ -1133,6 +1131,89 @@ img {
 .form-contacts-button {
   margin-top: 32px;
 }
+
+
+/* Tooltip */
+
+.form-label {
+  position: relative;
+}
+
+.tooltip {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+}
+
+.tooltip-date {
+  top: 3px;
+  left: 44px;
+}
+
+.tooltip-address {
+  top: 3px;
+  left: 56px;
+}
+
+.tooltip-toggle {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+
+.tooltip-icon {
+  width: 100%;
+  height: 100%;
+  color: #2D3440;
+  display: block;
+}
+
+.tooltip-text {
+  background-color: #FFFFFF;
+  color: #565C66;
+  border: 1px solid #B9B9B9;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  text-transform: none;
+  padding: 10px 8px;
+  display: block;
+  width: 163px;
+  box-shadow: 0 0 8px 0 rgba(194, 194, 194, 0.2);
+  position: absolute;
+  margin-left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  display: none;
+}
+
+.tooltip-toggle:hover + .tooltip-text,
+.tooltip-toggle:focus + .tooltip-text {
+  display: block;
+}
+
+.tooltip-text::before {
+  content:'';
+  background-image: url("../images/vector/tooltip-arrow.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 7px;
+  height: 14px;
+  position:absolute;
+  right: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #B9B9B9;
+  box-shadow: 0 0 8px 0 rgba(194, 194, 194, 0.2);
+}
+
+
 
 /* Footer */
 
