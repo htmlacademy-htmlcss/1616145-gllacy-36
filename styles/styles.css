@@ -397,6 +397,7 @@ img {
   outline: 0;
   box-shadow: inset 0 0 0 1px #B9B9B9;
   border-radius: 4px;
+  width: 100%
 }
 
 .input::placeholder {
@@ -1195,23 +1196,19 @@ img {
   display: block;
 }
 
-.tooltip-text::before {
-  content:'';
+.tooltip-text::after {
+  content: '';
   background-image: url("../images/vector/tooltip-arrow.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   width: 7px;
-  height: 14px;
-  position:absolute;
+  height: 16px;
+  position: absolute;
   right: 100%;
   top: 50%;
   transform: translateY(-50%);
-  margin-left: auto;
-  margin-right: auto;
   border: 1px solid #B9B9B9;
-  box-shadow: 0 0 8px 0 rgba(194, 194, 194, 0.2);
+  border-right: 0px solid transparent;
 }
+
 
 
 
@@ -1958,4 +1955,86 @@ img {
   color: #2D3440;
   text-decoration: none;
   border-bottom: 1px solid rgba(45, 52, 64, 1);
+}
+
+/* Modal window */
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(45, 52, 64, 0.3);
+  z-index: 2;
+}
+
+.modal {
+  position: relative;
+  margin: auto;
+  padding: 64px 64px 66px 64px;
+  background-color: #FCFCFC;
+  box-shadow: 0px 15px 40px 0px rgba(45, 52, 64, 0.12);
+  border-radius: 8px;
+}
+
+.modal-form {
+  width: 570px;
+}
+
+
+.modal-close-button {
+  position: absolute;
+  padding: 0;
+  top: 0;
+  right: 0;
+  width: 52px;
+  height: 52px;
+  background-color: #ffffff;
+  border: none;
+  background-image: url("../images/vector/outline-icon/cross.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.modal-title {
+  margin: 0;
+  margin-bottom: 32px;
+  font-family: inherit;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #2D3440;
+}
+
+.auth-form .field-group {
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+.application-form {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin: 0;
+  width: 100%;
+}
+
+.field-group {
+  margin: 0;
+  display: flex;
+}
+
+.input textarea {
+  color: #B9B9B9;
+  appearance: none;
+}
+
+.modal-window-button{
+  align-self: flex-end;
+  margin-top: 16px;
 }

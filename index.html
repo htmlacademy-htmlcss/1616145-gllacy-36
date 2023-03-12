@@ -99,12 +99,18 @@
 
             <!-- Поповер: вход -->
 
-            <div class="popover popover-enter" hidden>
+            <div class="popover popover-enter" >
               <div class="popover-content">
                 <h2 class="popover-title">Личный кабинет</h2>
                 <form class="enter-form" action="#" method="post">
-                  <input class="input" type="text" name="login" id="login-field" value="email@example.com">
+                  <div class="field-group">
+                    <label class="visually-hidden" for="login">Логин</label>
+                  <input class="input form-login-field" type="text" name="login" id="login-field" value="email@example.com">
+                  </div>
+                  <div class="field-group">
+                    <label class="visually-hidden" for="password">Пароль</label>
                   <input class="input" type="password" name="password" id="password-field" value="******">
+                  </div>
                   <div class="enter-buttons">
                     <input class="button additional-button additional-button-text" type="submit" value="Войти">
                     <div class="enter-link">
@@ -116,6 +122,7 @@
               </div>
             </div>
           </li>
+
 
           <li class="navigation-user-item">
             <a class="navigation-user-link icon-text-button navigation-user-link-opened" href="#">
@@ -628,6 +635,37 @@
         </section>
       </div>
     </footer>
+
+
+
+    <!-- Modal window -->
+    <div class="modal-container">
+      <div class="modal modal-form">
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Мы обязательно ответим вам!</h2>
+          <form class="application-form" action="#" method="post">
+            <div class="field-group">
+              <label class="visually-hidden" for="name">Имя и фамилия</label>
+              <input class="input application-form-field" type="text" id="name" name="name" placeholder="Имя и фамилия">
+            </div>
+            <div class="field-group">
+              <label class="visually-hidden" for="email">Электронная почта</label>
+              <input class="input application-form-field" type="text" id="email" name="email" placeholder="email@example.com">
+            </div>
+            <div class="field-group">
+              <label class="visually-hidden" for="comment">Комментарий</label>
+              <textarea class="input application-form-field" type="text" id="comment" name="comment" rows="6">В свободной форме </textarea>
+            </div>
+            <button class="button additional-button additional-button-text modal-window-button" type="submit">Отправить</button>
+          </form>
+
+        </section>
+      </div>
+    </div>
+
   </body>
 
 </html>
