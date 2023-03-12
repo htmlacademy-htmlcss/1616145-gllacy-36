@@ -636,16 +636,18 @@ img {
   display: none;
 }
 
+
+
 .slider-item-second {
   position: absolute;
-  transform: scale(33%);
+  transform: scale(0.33);
   opacity: 0.4;
   left: 30%;
 }
 
 .slider-item-third {
   position: absolute;
-  transform: scale(33%);
+  transform: scale(0.33);
   opacity: 0.4;
   left: 42%
 }
@@ -1587,8 +1589,9 @@ fieldset ~ fieldset {
 }
 
 .catalog-list-item {
-  padding: 8px 12px 8px 16px;
+  padding: 6px 12px 6px 16px;
   width: 135px;
+  line-height: 0;
 }
 
 .catalog-list-item:hover {
@@ -1601,6 +1604,9 @@ fieldset ~ fieldset {
 
 .catalog-list-item-current {
   background-color: #FF4A78;
+}
+
+.catalog-list-item-current .catalog-link {
   color: #FCFCFC;
 }
 
@@ -1612,10 +1618,17 @@ fieldset ~ fieldset {
   text-decoration: none;
 }
 
-
-
 .catalog-new {
   font-weight: 700;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.catalog-list-decor {
+  display: block;
+  margin: 3px 16px 4px;
+  height: 1px;
+  background-color: #B9B9B9;
 }
 
 .basket-items-list {
@@ -1713,7 +1726,7 @@ fieldset ~ fieldset {
 }
 
 .input-search:not(:placeholder-shown) + .clear {
-display: block;
+  display: block;
 }
 
 

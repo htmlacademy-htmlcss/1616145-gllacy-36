@@ -30,12 +30,14 @@
               </a>
 
               <!-- Каталог: выпадающий список -->
-                     <div class="popover-list popover-catalog-list">
+                     <div class="popover-list popover-catalog-list" hidden>
                     <ul class="catalog-list">
-                      <li class="catalog-list-item">
-                        <a class="catalog-link catalog-new" href="new.html">Новинки</a>
+                      <li class="catalog-list-item catalog-new">
+                        <a class="catalog-link " href="new.html">Новинки</a>
                       </li>
-                      <li class="catalog-list-item catalog-list-item-current ">
+                      <li class="catalog-list-decor">
+                      </li>
+                      <li class="catalog-list-item catalog-list-item-current">
                         <a class="catalog-link" href="cream.html">Сливочное</a>
                       </li>
                       <li class="catalog-list-item">
@@ -76,7 +78,7 @@
 
             <!-- Поповер: поиск -->
 
-            <div class="popover popover-search" >
+            <div class="popover popover-search" hidden>
               <form class="popover-content">
                 <input class="input input-search" type="text" name="search" id="search" placeholder="Поиск по сайту">
                 <input class="clear" type="reset" value="">
