@@ -1355,6 +1355,7 @@ fieldset ~ fieldset {
   border-radius: 20px;
   border: 0;
   outline: 0;
+  appearance: none;
 }
 
 .catalog-dropdown:hover {
@@ -1364,6 +1365,25 @@ fieldset ~ fieldset {
 .catalog-dropdown:focus {
   background-color: rgba(252, 252, 252, 0.4);
   box-shadow: inset 0 0 0 2px #FCFCFC;
+}
+
+.catalog-dropdown-wrapper {
+  position: relative;
+}
+
+.catalog-dropdown-wrapper::after {
+  display: block;
+  content: "";
+  height: 16px;
+  width: 16px;
+  background-image: url(../images/vector/outline-icon/arrow-down.svg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 13px;
 }
 
 .range {
