@@ -123,14 +123,40 @@
             <div class="group-one">
               <fieldset class="catalog-filter-group sorting">
                 <legend class="catalog-filter-title">Сортировка:</legend>
-                <select name="sorting">
+                <select class="catalog-dropdown" name="sorting">
                   <option value="popular">по популярности</option>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M3.808 6.195a.667.667 0 1 0-.943.943l4.66 4.66a.665.665 0 0 0 .95.006l.006-.005 4.66-4.66a.667.667 0 1 0-.943-.944L8.003 10.39 3.808 6.195Z" clip-rule="evenodd"/>
+                  </svg>
                 </select>
               </fieldset>
 
               <fieldset class="catalog-filter-group price">
                 <legend class="catalog-filter-title">Цена: 100 ₽ – 500 ₽</legend>
-                <input type="range" min="100" max="500" step="100"> <!-- Исправить элемент в соответствующем задании -->
+                <div class="range">
+                  <div class="range-scale">
+                    <div class="range-bar">
+                      <button class="range-toggle toggle-min">
+                        <span class="visually-hidden">Изменить минимальную цену.</span>
+                      </button>
+                      <button class="range-toggle toggle-max">
+                        <span class="visually-hidden">Изменить максимальную цену.</span>
+                      </button>
+                    </div>
+                  </div>
+
+                  <!-- Нужны ли инпуты?
+                  <div class="range-wrapper-inputs">
+                    <label class="catalog-filter-label">
+                    <input class="range-input" type="number" value="100" name="min-price">
+                    </label>
+                    <label class="catalog-filter-label">
+                      <input class="range-input" type="number" value="500" name="max-price">
+                    </label>
+                  </div>
+                  -->
+
+                </div>
               </fieldset>
 
               <!-- Фильтр с радиокнопками -->
