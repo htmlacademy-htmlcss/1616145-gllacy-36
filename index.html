@@ -76,17 +76,14 @@
 
             <!-- Поповер: поиск -->
 
-            <div class="popover popover-search">
+            <div class="popover popover-search" hidden>
               <div class="popover-content">
                 <input class="input input-search" type="text" name="search" id="search" placeholder="Поиск по сайту">
                 <span class="clear"></span>
               </div>
             </div>
-
-
-
-
           </li>
+
           <li class="navigation-user-item">
             <a class="navigation-user-link icon-text-button navigation-user-link-opened" href="#">
               <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
@@ -97,7 +94,25 @@
               </svg>
               Вход
             </a>
+
+            <!-- Поповер: вход -->
+
+            <div class="popover popover-enter">
+              <div class="popover-content">
+                <h2 class="popover-title">Личный кабинет</h2>
+
+              </div>
+              <div class="enter-buttons">
+                <button class="button additional-button additional-button-text basket-button-order"
+                  type="submit">Войти</button>
+                <div class="enter-link">
+                  <a class="enter-link-text">Забыли пароль?</a>
+                  <a class="enter-link-text">Регистрация</a>
+                </div>
+              </div>
+            </div>
           </li>
+
           <li class="navigation-user-item">
             <a class="navigation-user-link icon-text-button navigation-user-link-opened" href="#">
               <span class="visually-hidden">Корзина</span>
@@ -118,7 +133,7 @@
               </div>
             </div>
 
-             <!-- Поповер: в корзине есть товары -->
+            <!-- Поповер: в корзине есть товары -->
             <div class="popover popover-basket-full" hidden>
               <div class="popover-content">
                 <h2 class="popover-title">Корзина</h2>

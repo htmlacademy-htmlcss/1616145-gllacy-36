@@ -1543,3 +1543,32 @@ img {
   background-image: url(../images/vector/outline-icon/cross.svg);
   opacity: 0.4;
 }
+
+.popover-enter {
+  width: 420px;
+  padding: 48px 48px 52px 48px;
+}
+
+.enter-buttons {
+  display: flex;
+  gap: 23px;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.enter-link {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: start;
+}
+
+.enter-link-text {
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 20px;
+  height: 20px;
+  color: #2D3440;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(45, 52, 64, 1);
+}
