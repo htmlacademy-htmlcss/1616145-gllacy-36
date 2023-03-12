@@ -100,15 +100,17 @@
             <div class="popover popover-enter">
               <div class="popover-content">
                 <h2 class="popover-title">Личный кабинет</h2>
-
-              </div>
-              <div class="enter-buttons">
-                <button class="button additional-button additional-button-text basket-button-order"
-                  type="submit">Войти</button>
-                <div class="enter-link">
-                  <a class="enter-link-text">Забыли пароль?</a>
-                  <a class="enter-link-text">Регистрация</a>
-                </div>
+                <form class="enter-form" action="#" method="post">
+                  <input class="input" type="text" name="login" id="login-field" value="email@example.com">
+                  <input class="input" type="password" name="password" id="password-field" value="******">
+                  <div class="enter-buttons">
+                    <input class="button additional-button additional-button-text" type="submit" value="Войти">
+                    <div class="enter-link">
+                      <a class="enter-link-text" href="#">Забыли пароль?</a>
+                      <a class="enter-link-text" href="#">Регистрация</a>
+                    </div>
+                  </div>
+                </form>
               </div>
             </div>
           </li>

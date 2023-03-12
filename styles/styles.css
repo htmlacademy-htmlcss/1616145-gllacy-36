@@ -1549,11 +1549,18 @@ img {
   padding: 48px 48px 52px 48px;
 }
 
+.enter-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
 .enter-buttons {
   display: flex;
   gap: 23px;
   justify-content: flex-start;
   align-items: center;
+  margin-top: 16px;
 }
 
 .enter-link {
