@@ -256,6 +256,7 @@ img {
   background-color: #2D3440;
 }
 
+
 .navigation-user-link {
   font-style: normal;
   font-weight: 400;
@@ -888,8 +889,7 @@ img {
 .blog {
   display: flex;
   flex-direction: column;
-  padding-top: 33px;
-  padding-left: 32px;
+  padding: 33px 32px 32px 32px;
   gap: 12px;
   background-image: url(../images/raster/background-images/news.jpg);
   background-repeat: no-repeat;
@@ -2029,12 +2029,15 @@ img {
   display: flex;
 }
 
-.input textarea {
-  color: #B9B9B9;
-  appearance: none;
+.field-group textarea {
+  resize: none;
 }
 
 .modal-window-button{
   align-self: flex-end;
   margin-top: 16px;
 }
+
+.modal-container {
+  display: none;
+ }
