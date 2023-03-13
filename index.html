@@ -8,7 +8,8 @@
   </head>
 
 
-<!-- Цвет фона страницы переключается за счет подстановки классов в body: body-pink, body-blue или body-yellow -->
+  <!-- Цвет фона страницы переключается за счет подстановки классов в body: body-pink, body-blue или body-yellow -->
+
   <body class="body-pink">
 
     <!-- Header -->
@@ -43,9 +44,8 @@
                   <li class="catalog-list-item catalog-new">
                     <a class="catalog-link " href="new.html">Новинки</a>
                   </li>
-                  <li class="catalog-list-decor">
-                  </li>
-                  <li class="catalog-list-item catalog-list-item-current">
+                  <!-- Стили для текущей страницы в классе catalog-list-item-current -->
+                  <li class="catalog-list-item">
                     <a class="catalog-link" href="cream.html">Сливочное</a>
                   </li>
                   <li class="catalog-list-item">
@@ -77,7 +77,7 @@
           <li class="navigation-user-item">
             <!-- Стили для нажатой кнопки записаны в классе navigation-user-link-opened -->
             <!-- Если кнопка нажата, под кнопкой появляется элемент popover-search -->
-              <!-- При клике на область вне popover, класс  navigation-user-link-opened снимается с элемента -->
+            <!-- При клике на область вне popover, класс  navigation-user-link-opened снимается с элемента -->
             <a class="navigation-user-link header-icon-button" href="#">
               <span class="visually-hidden">Поиск</span>
               <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
@@ -90,7 +90,7 @@
 
             <!-- Поповер: поиск -->
             <!-- Элемент скрыт через атрибут hidden -->
-             <!-- Должен появляться при клике на кнопку поиска (с иконкой лупа) -->
+            <!-- Должен появляться при клике на кнопку поиска (с иконкой лупа) -->
             <div class="popover popover-search" hidden>
               <form class="popover-content">
                 <input class="input input-search" type="text" name="search" id="search" placeholder="Поиск по сайту">
@@ -116,7 +116,7 @@
 
             <!-- Поповер: вход -->
             <!-- Элемент скрыт через атрибут hidden -->
-             <!-- Должен появляться при клике на кнопку Вход -->
+            <!-- Должен появляться при клике на кнопку Вход -->
             <div class="popover popover-enter" hidden>
               <div class="popover-content">
                 <h2 class="popover-title">Личный кабинет</h2>
@@ -153,7 +153,7 @@
 
             <!-- Поповер: пустая корзина -->
             <!-- Элемент скрыт через атрибут hidden -->
-               <!-- Должен появляться при клике на кнопку Корзина, если корзина пуста -->
+            <!-- Должен появляться при клике на кнопку Корзина, если корзина пуста -->
             <div class="popover popover-basket-empty" hidden>
               <div class="popover-content">
                 <span class="popover-empty-basket-title">Ваша корзина пока пуста</span>
@@ -607,7 +607,7 @@
             <span class="contacts-important"><a href="tel:+78128121212">+7 (812) 812-12-12</a></span>
             <p class="form-contacts-description">(с 10 до 20 ежедневно)</p>
 
-             <!-- При клике на кнопку появляется модальное окно -->
+            <!-- При клике на кнопку появляется модальное окно -->
             <a class="button additional-button additional-button-text form-contacts-button" href="#">Форма обратной
               связи</a>
           </div>
@@ -689,8 +689,10 @@
         <button class="modal-close-button">
           <span class="visually-hidden">Закрыть</span>
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M15.8858 5.05482C16.1461 4.79447 16.1461 4.37236 15.8858 4.11201C15.6254 3.85166 15.2033 3.85166 14.943 4.11201L9.99877 9.0562L5.05458 4.11201C4.79423 3.85166 4.37212 3.85166 4.11177 4.11201C3.85142 4.37236 3.85142 4.79447 4.11177 5.05482L9.05596 9.99901L4.11177 14.9432C3.85142 15.2036 3.85142 15.6257 4.11177 15.886C4.37212 16.1464 4.79423 16.1464 5.05458 15.886L9.99877 10.9418L14.943 15.886C15.2033 16.1464 15.6254 16.1464 15.8858 15.886C16.1461 15.6257 16.1461 15.2036 15.8858 14.9432L10.9416 9.99901L15.8858 5.05482Z" fill="#2D3440"/>
-            </svg>
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M15.8858 5.05482C16.1461 4.79447 16.1461 4.37236 15.8858 4.11201C15.6254 3.85166 15.2033 3.85166 14.943 4.11201L9.99877 9.0562L5.05458 4.11201C4.79423 3.85166 4.37212 3.85166 4.11177 4.11201C3.85142 4.37236 3.85142 4.79447 4.11177 5.05482L9.05596 9.99901L4.11177 14.9432C3.85142 15.2036 3.85142 15.6257 4.11177 15.886C4.37212 16.1464 4.79423 16.1464 5.05458 15.886L9.99877 10.9418L14.943 15.886C15.2033 16.1464 15.6254 16.1464 15.8858 15.886C16.1461 15.6257 16.1461 15.2036 15.8858 14.9432L10.9416 9.99901L15.8858 5.05482Z"
+              fill="#2D3440" />
+          </svg>
         </button>
         <section class="modal-content">
           <h2 class="modal-title">Мы обязательно ответим вам!</h2>
