@@ -7,9 +7,8 @@
     <link rel="stylesheet" href="styles/styles.css">
   </head>
 
-  
-<!-- Цвет фона страницы переключается за счет подстановки классов в body: body-pink, body-blue или body-yellow -->
 
+<!-- Цвет фона страницы переключается за счет подстановки классов в body: body-pink, body-blue или body-yellow -->
   <body class="body-pink">
 
     <!-- Header -->
@@ -22,7 +21,11 @@
           </a>
           <ul class="navigation-list">
             <li class="navigation-item dropdown-list-catalog">
-              <a class="navigation-link navigation-link-dropdown navigation-link-dropdown-opened" href="catalog.html">
+
+              <!-- Стили для нажатой кнопки записаны в классе navigation-link-dropdown-opened -->
+              <!-- Если кнопка нажата, под кнопкой появляется выпадающий список popover-catalog-list -->
+              <!-- При клике на область вне popover, класс  navigation-link-dropdown-opened снимается с элемента -->
+              <button class="navigation-link navigation-link-dropdown">
                 Каталог
                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                   fill="none" viewBox="0 0 16 16">
@@ -30,12 +33,11 @@
                     d="M3.808 6.195a.667.667 0 1 0-.943.943l4.66 4.66a.665.665 0 0 0 .95.006l.006-.005 4.66-4.66a.667.667 0 1 0-.943-.944L8.003 10.39 3.808 6.195Z"
                     clip-rule="evenodd" />
                 </svg>
-              </a>
-
+              </button>
 
               <!-- Каталог: выпадающий список -->
               <!-- Элемент скрыт через атрибут hidden -->
-
+              <!-- Должен появляться при клике на кнопку Каталог -->
               <div class="popover-list popover-catalog-list" hidden>
                 <ul class="catalog-list">
                   <li class="catalog-list-item catalog-new">
@@ -70,7 +72,12 @@
           <li class="navigation-user-item">
             <a class="tel-header" href="tel:+78005558628">+7 800 555-86-28</a>
           </li>
+
+
           <li class="navigation-user-item">
+            <!-- Стили для нажатой кнопки записаны в классе navigation-user-link-opened -->
+            <!-- Если кнопка нажата, под кнопкой появляется элемент popover-search -->
+              <!-- При клике на область вне popover, класс  navigation-user-link-opened снимается с элемента -->
             <a class="navigation-user-link header-icon-button" href="#">
               <span class="visually-hidden">Поиск</span>
               <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
@@ -81,10 +88,9 @@
               </svg>
             </a>
 
-
             <!-- Поповер: поиск -->
             <!-- Элемент скрыт через атрибут hidden -->
-
+             <!-- Должен появляться при клике на кнопку поиска (с иконкой лупа) -->
             <div class="popover popover-search" hidden>
               <form class="popover-content">
                 <input class="input input-search" type="text" name="search" id="search" placeholder="Поиск по сайту">
@@ -93,8 +99,12 @@
             </div>
           </li>
 
+
           <li class="navigation-user-item">
-            <a class="navigation-user-link icon-text-button navigation-user-link-opened" href="#">
+            <!-- Стили для нажатой кнопки записаны в классе navigation-user-link-opened -->
+            <!-- Если кнопка нажата, под кнопкой появляется элемент popover-enter -->
+            <!-- При клике на область вне popover, класс  navigation-user-link-opened снимается с элемента -->
+            <a class="navigation-user-link icon-text-button" href="#">
               <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                 fill="none" viewBox="0 0 16 16">
                 <path fill="currentColor" fill-rule="evenodd"
@@ -104,23 +114,15 @@
               Вход
             </a>
 
-
             <!-- Поповер: вход -->
             <!-- Элемент скрыт через атрибут hidden -->
-
+             <!-- Должен появляться при клике на кнопку Вход -->
             <div class="popover popover-enter" hidden>
               <div class="popover-content">
                 <h2 class="popover-title">Личный кабинет</h2>
                 <form class="enter-form" action="#" method="post">
-                  <div class="field-group">
-                    <label class="visually-hidden" for="login">Логин</label>
-                    <input class="input form-login-field" type="text" name="login" id="login-field"
-                      value="email@example.com">
-                  </div>
-                  <div class="field-group">
-                    <label class="visually-hidden" for="password">Пароль</label>
-                    <input class="input" type="password" name="password" id="password-field" value="******">
-                  </div>
+                  <input class="input" type="text" name="login" id="login-field" value="email@example.com">
+                  <input class="input" type="password" name="password" id="password-field" value="******">
                   <div class="enter-buttons">
                     <input class="button additional-button additional-button-text" type="submit" value="Войти">
                     <div class="enter-link">
@@ -135,6 +137,9 @@
 
 
           <li class="navigation-user-item">
+            <!-- Стили для нажатой кнопки записаны в классе navigation-user-link-opened -->
+            <!-- Если кнопка нажата, под кнопкой появляется элемент popover-basket-empty (если корзина пуста) или popover-basket-full (если в корзине есть товары) -->
+            <!-- При клике на область вне popover, класс  navigation-user-link-opened снимается с элемента -->
             <a class="navigation-user-link icon-text-button" href="#">
               <span class="visually-hidden">Корзина</span>
               <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
@@ -146,10 +151,9 @@
               <span class="basket">2 товара</span>
             </a>
 
-
             <!-- Поповер: пустая корзина -->
             <!-- Элемент скрыт через атрибут hidden -->
-
+               <!-- Должен появляться при клике на кнопку Корзина, если корзина пуста -->
             <div class="popover popover-basket-empty" hidden>
               <div class="popover-content">
                 <span class="popover-empty-basket-title">Ваша корзина пока пуста</span>
@@ -158,7 +162,7 @@
 
             <!-- Поповер: в корзине есть товары -->
             <!-- Элемент скрыт через атрибут hidden -->
-
+            <!-- Должен появляться при клике на кнопку Корзина, если в корзине есть товары -->
             <div class="popover popover-basket-full" hidden>
               <div class="popover-content">
                 <h2 class="popover-title">Корзина</h2>
@@ -602,6 +606,8 @@
             <p class="communication-form-text communication-form-text-margin">Для заказов по телефону:</p>
             <span class="contacts-important"><a href="tel:+78128121212">+7 (812) 812-12-12</a></span>
             <p class="form-contacts-description">(с 10 до 20 ежедневно)</p>
+
+             <!-- При клике на кнопку появляется модальное окно -->
             <a class="button additional-button additional-button-text form-contacts-button" href="#">Форма обратной
               связи</a>
           </div>
@@ -677,6 +683,7 @@
 
     <!-- Modal window -->
     <!-- Элемент скрыт через свойство display: none у класса modal-container -->
+    <!-- Окно появляется при клике на кнопку Форма обратной связи -->
     <div class="modal-container">
       <div class="modal modal-form">
         <button class="modal-close-button">
