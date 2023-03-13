@@ -41,10 +41,10 @@
               <!-- Должен появляться при клике на кнопку Каталог -->
               <div class="popover-list popover-catalog-list" hidden>
                 <ul class="catalog-list">
+                  <!-- Стили для текущей страницы в классе catalog-list-item-current -->
                   <li class="catalog-list-item catalog-new">
                     <a class="catalog-link " href="new.html">Новинки</a>
                   </li>
-                  <!-- Стили для текущей страницы в классе catalog-list-item-current -->
                   <li class="catalog-list-item">
                     <a class="catalog-link" href="cream.html">Сливочное</a>
                   </li>
@@ -58,6 +58,7 @@
                     <a class="catalog-link" href="melorin.html">Мелорин</a>
                   </li>
                 </ul>
+              </div>
             </li>
             <li class="navigation-item">
               <a class="navigation-link" href="#">Доставка и оплата</a>
@@ -258,7 +259,7 @@
               </div>
             </li>
             <li class="slider-item slider-item-third">
-              <div class="slider-image-wrapper">
+              <div class="slider-image-wrapper"></div>
                 <img class="slider-image" src="images/raster/slider/slider-3.png" width="350" height="507"
                   alt="Фотография мороженого с маршмеллоу.">
 
@@ -709,7 +710,7 @@
             </div>
             <div class="field-group">
               <label class="visually-hidden" for="comment">Комментарий</label>
-              <textarea class="input input-field application-form-field" type="text" id="comment" name="comment"
+              <textarea class="input input-field application-form-field" id="comment" name="comment"
                 rows="6" placeholder="В свободной форме"></textarea>
             </div>
             <button class="button additional-button additional-button-text modal-window-button"
