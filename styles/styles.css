@@ -1233,7 +1233,7 @@ img {
   box-shadow: 0 0 8px 0 rgba(194, 194, 194, 0.2);
   position: absolute;
   margin-left: 26px;
-  top: 100%;
+  top: 50%;
   transform: translateY(-50%);
   z-index: 1;
   border-radius: 1px;
@@ -1250,14 +1250,14 @@ img {
   width: 14px;
   height: 14px;
   position: absolute;
-  right: 96%;
-  top: 20%;
-  background-color: #FFFFFF;
-  border-top: 1px solid #B9B9B9;
-  border-right: 1px solid #B9B9B9;
-  transform: rotate(-135deg);
+  z-index: -1;
+  left: -7.5px;
+  top: 50%;
+  background-color: #FCFCFC;
+  border-left: 1px solid #B9B9B9;
+  border-bottom: 1px solid #B9B9B9;
+  transform: translateY(-50%) rotate(45deg);
 }
-
 
 
 
