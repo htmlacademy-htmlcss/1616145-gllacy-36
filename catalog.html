@@ -30,6 +30,8 @@
               </a>
 
               <!-- Каталог: выпадающий список -->
+              <!-- Элемент скрыт через атрибут hidden -->
+
               <div class="popover-list popover-catalog-list" hidden>
                 <ul class="catalog-list">
                   <li class="catalog-list-item catalog-new">
@@ -77,6 +79,7 @@
 
 
             <!-- Поповер: поиск -->
+            <!-- Элемент скрыт через атрибут hidden -->
 
             <div class="popover popover-search" hidden>
               <form class="popover-content">
@@ -97,7 +100,9 @@
               Вход
             </a>
 
+
             <!-- Поповер: вход -->
+            <!-- Элемент скрыт через атрибут hidden -->
 
             <div class="popover popover-enter" hidden>
               <div class="popover-content">
@@ -129,7 +134,9 @@
               <span class="basket">2 товара</span>
             </a>
 
+
             <!-- Поповер: пустая корзина -->
+            <!-- Элемент скрыт через атрибут hidden -->
 
             <div class="popover popover-basket-empty" hidden>
               <div class="popover-content">
@@ -137,8 +144,11 @@
               </div>
             </div>
 
+
             <!-- Поповер: в корзине есть товары -->
-            <div class="popover popover-basket-full">
+            <!-- Элемент скрыт через атрибут hidden -->
+
+            <div class="popover popover-basket-full" hidden>
               <div class="popover-content">
                 <h2 class="popover-title">Корзина</h2>
                 <ul class="basket-items-list">
@@ -190,6 +200,8 @@
         </ul>
       </div>
     </header>
+
+
     <!-- Main -->
     <main class="main-catalog">
       <div class="container">
@@ -210,6 +222,7 @@
 
 
         <!-- Фильтры -->
+        
         <section class="catalog-filter">
           <h2 class="visually-hidden">Фильтры в каталоге</h2>
           <form class="catalog-filter-form" action="https://htmlacademy.ru/" method="get">
@@ -237,22 +250,12 @@
                       </button>
                     </div>
                   </div>
-
-                  <!-- Нужны ли инпуты?
-                  <div class="range-wrapper-inputs">
-                    <label class="catalog-filter-label">
-                    <input class="range-input" type="number" value="100" name="min-price">
-                    </label>
-                    <label class="catalog-filter-label">
-                      <input class="range-input" type="number" value="500" name="max-price">
-                    </label>
-                  </div>
-                  -->
-
                 </div>
               </fieldset>
 
+
               <!-- Фильтр с радиокнопками -->
+
               <fieldset class="catalog-filter-group fat">
                 <legend class="catalog-filter-title">Жирность:</legend>
                 <div class="filter-fat-background">
@@ -290,8 +293,8 @@
                 </div>
               </fieldset>
             </div>
-
             <div class="group-two">
+
 
               <!-- Фильтр с чекбоксами-->
 

@@ -1544,12 +1544,12 @@ img {
 
 .toggle-min {
   top: -8px;
-  left: 0;
+  left: 15%;
 }
 
 .toggle-max {
   top: -8px;
-  right: 0;
+  right: 31%;
 }
 
 .filter-ingredient-background,
