@@ -43,15 +43,13 @@ body {
   font-size: 18px;
   line-height: 24px;
   color: #2D3440;
+  background-color: #FEAFC3;
   margin: 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.body-pink {
-  background-color: #FEAFC3;
-}
 
 .body-blue {
   background-color: #69A9FF;
