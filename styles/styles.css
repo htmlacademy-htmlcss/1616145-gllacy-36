@@ -1355,7 +1355,7 @@ img {
 .breadcrumbs-item ~ .breadcrumbs-item::before {
   display: inline-block;
   content: "";
-  margin: 4px 8px 0;
+  margin: 4px 7px 0;
   background-image: url(../images/vector/outline-icon/chevrons-right.svg);
   background-repeat: no-repeat;
   background-size: contain;
@@ -1414,7 +1414,7 @@ img {
 
 .catalog-filter {
   display: flex;
-  margin-bottom: 44px;
+  margin-bottom: 45px;
   font-family: inherit;
   font-size: 14px;
   line-height: 20px;
@@ -1424,7 +1424,7 @@ img {
 .catalog-filter-title {
   font-size: 14px;
   line-height: 20px;
-  margin-left: 16px;
+  margin-left: 14px;
   margin-bottom: 8px;
 }
 
