@@ -7,7 +7,10 @@
     <link rel="stylesheet" href="styles/styles.css">
   </head>
 
-  <body>
+
+  <!-- Цвет фона страницы переключается за счет подстановки классов в body: body-pink, body-blue или body-yellow -->
+
+  <body class="body-pink">
 
     <!-- Header -->
     <header class="gllacy-header">
@@ -19,7 +22,11 @@
           </a>
           <ul class="navigation-list">
             <li class="navigation-item dropdown-list-catalog">
-              <a class="navigation-link navigation-link-dropdown navigation-link-dropdown-opened" href="catalog.html">
+
+              <!-- Стили для нажатой кнопки записаны в классе navigation-link-dropdown-opened -->
+              <!-- Если кнопка нажата, под кнопкой появляется выпадающий список popover-catalog-list -->
+              <!-- При клике на область вне popover, класс  navigation-link-dropdown-opened снимается с элемента -->
+              <button class="navigation-link navigation-link-dropdown">
                 Каталог
                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                   fill="none" viewBox="0 0 16 16">
@@ -27,17 +34,18 @@
                     d="M3.808 6.195a.667.667 0 1 0-.943.943l4.66 4.66a.665.665 0 0 0 .95.006l.006-.005 4.66-4.66a.667.667 0 1 0-.943-.944L8.003 10.39 3.808 6.195Z"
                     clip-rule="evenodd" />
                 </svg>
-              </a>
+              </button>
 
               <!-- Каталог: выпадающий список -->
-              <div class="popover-list popover-catalog-list">
+              <!-- Элемент скрыт через атрибут hidden -->
+              <!-- Должен появляться при клике на кнопку Каталог -->
+              <div class="popover-list popover-catalog-list" hidden>
                 <ul class="catalog-list">
+                  <!-- Стили для текущей страницы в классе catalog-list-item-current -->
                   <li class="catalog-list-item catalog-new">
                     <a class="catalog-link " href="new.html">Новинки</a>
                   </li>
-                  <li class="catalog-list-decor">
-                  </li>
-                  <li class="catalog-list-item catalog-list-item-current">
+                  <li class="catalog-list-item">
                     <a class="catalog-link" href="cream.html">Сливочное</a>
                   </li>
                   <li class="catalog-list-item">
@@ -50,6 +58,7 @@
                     <a class="catalog-link" href="melorin.html">Мелорин</a>
                   </li>
                 </ul>
+              </div>
             </li>
             <li class="navigation-item">
               <a class="navigation-link" href="#">Доставка и оплата</a>
@@ -64,7 +73,12 @@
           <li class="navigation-user-item">
             <a class="tel-header" href="tel:+78005558628">+7 800 555-86-28</a>
           </li>
+
+
           <li class="navigation-user-item">
+            <!-- Стили для нажатой кнопки записаны в классе navigation-user-link-opened -->
+            <!-- Если кнопка нажата, под кнопкой появляется элемент popover-search -->
+            <!-- При клике на область вне popover, класс  navigation-user-link-opened снимается с элемента -->
             <a class="navigation-user-link header-icon-button" href="#">
               <span class="visually-hidden">Поиск</span>
               <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
@@ -75,9 +89,9 @@
               </svg>
             </a>
 
-
             <!-- Поповер: поиск -->
-
+            <!-- Элемент скрыт через атрибут hidden -->
+            <!-- Должен появляться при клике на кнопку поиска (с иконкой лупа) -->
             <div class="popover popover-search" hidden>
               <form class="popover-content">
                 <input class="input input-search" type="text" name="search" id="search" placeholder="Поиск по сайту">
@@ -86,8 +100,12 @@
             </div>
           </li>
 
+
           <li class="navigation-user-item">
-            <a class="navigation-user-link icon-text-button navigation-user-link-opened" href="#">
+            <!-- Стили для нажатой кнопки записаны в классе navigation-user-link-opened -->
+            <!-- Если кнопка нажата, под кнопкой появляется элемент popover-enter -->
+            <!-- При клике на область вне popover, класс  navigation-user-link-opened снимается с элемента -->
+            <a class="navigation-user-link icon-text-button" href="#">
               <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                 fill="none" viewBox="0 0 16 16">
                 <path fill="currentColor" fill-rule="evenodd"
@@ -98,19 +116,14 @@
             </a>
 
             <!-- Поповер: вход -->
-
-            <div class="popover popover-enter" >
+            <!-- Элемент скрыт через атрибут hidden -->
+            <!-- Должен появляться при клике на кнопку Вход -->
+            <div class="popover popover-enter" hidden>
               <div class="popover-content">
                 <h2 class="popover-title">Личный кабинет</h2>
-                <form class="enter-form" action="#" method="post">
-                  <div class="field-group">
-                    <label class="visually-hidden" for="login">Логин</label>
-                  <input class="input form-login-field" type="text" name="login" id="login-field" value="email@example.com">
-                  </div>
-                  <div class="field-group">
-                    <label class="visually-hidden" for="password">Пароль</label>
+                <form class="enter-form" action="https://echo.htmlacademy.ru/" method="post">
+                  <input class="input" type="text" name="login" id="login-field" value="email@example.com">
                   <input class="input" type="password" name="password" id="password-field" value="******">
-                  </div>
                   <div class="enter-buttons">
                     <input class="button additional-button additional-button-text" type="submit" value="Войти">
                     <div class="enter-link">
@@ -125,6 +138,9 @@
 
 
           <li class="navigation-user-item">
+            <!-- Стили для нажатой кнопки записаны в классе navigation-user-link-opened -->
+            <!-- Если кнопка нажата, под кнопкой появляется элемент popover-basket-empty (если корзина пуста) или popover-basket-full (если в корзине есть товары) -->
+            <!-- При клике на область вне popover, класс  navigation-user-link-opened снимается с элемента -->
             <a class="navigation-user-link icon-text-button" href="#">
               <span class="visually-hidden">Корзина</span>
               <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
@@ -137,7 +153,8 @@
             </a>
 
             <!-- Поповер: пустая корзина -->
-
+            <!-- Элемент скрыт через атрибут hidden -->
+            <!-- Должен появляться при клике на кнопку Корзина, если корзина пуста -->
             <div class="popover popover-basket-empty" hidden>
               <div class="popover-content">
                 <span class="popover-empty-basket-title">Ваша корзина пока пуста</span>
@@ -145,6 +162,8 @@
             </div>
 
             <!-- Поповер: в корзине есть товары -->
+            <!-- Элемент скрыт через атрибут hidden -->
+            <!-- Должен появляться при клике на кнопку Корзина, если в корзине есть товары -->
             <div class="popover popover-basket-full" hidden>
               <div class="popover-content">
                 <h2 class="popover-title">Корзина</h2>
@@ -198,6 +217,7 @@
       </div>
     </header>
 
+
     <!-- Main -->
     <main class="main-index">
       <div class="container">
@@ -207,6 +227,9 @@
         <section class="hero-block big-block slider">
           <h2 class="visually-hidden">Подборка мороженого</h2>
 
+
+          <!-- Переключение слайдов осуществляется через подстановку класса slider-item-current -->
+          <!-- Следующие по очередности слайды получают классы slider-item-second и slider-item-third в соответствии с их очередью вывода -->
 
           <ol class="slider-list">
             <li class="slider-item slider-item-current">
@@ -239,7 +262,7 @@
               <div class="slider-image-wrapper">
                 <img class="slider-image" src="images/raster/slider/slider-3.png" width="350" height="507"
                   alt="Фотография мороженого с маршмеллоу.">
-
+                </div>
                 <div class="slider-information">
                   <p class="slider-text slider-text-title">Карамельный пломбир<br> с маршмеллоу</p>
                   <p class="slider-text slider-text-description">Необычный сладкий десерт с карамельным<br> топпингом и
@@ -517,12 +540,21 @@
                     <span class="tooltip tooltip-date ">
                       <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date">
                         <svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 14 14" fill="none"
-                          xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_18758_945)"><path fill-rule="evenodd" clip-rule="evenodd"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <g clip-path="url(#clip0_18758_945)">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
                               d="M7.00026 2.12508C4.30774 2.12508 2.12502 4.3078 2.12502 7.00032C2.12502 9.69284 4.30774 11.8756 7.00026 11.8756C9.69278 11.8756 11.8755 9.69284 11.8755 7.00032C11.8755 4.3078 9.69278 2.12508 7.00026 2.12508ZM0.791687 7.00032C0.791687 3.57142 3.57136 0.791748 7.00026 0.791748C10.4292 0.791748 13.2088 3.57142 13.2088 7.00032C13.2088 10.4292 10.4292 13.2089 7.00026 13.2089C3.57136 13.2089 0.791687 10.4292 0.791687 7.00032ZM7.00007 6.3334C7.36826 6.3334 7.66674 6.63188 7.66674 7.00007V9.21683C7.66674 9.58502 7.36826 9.8835 7.00007 9.8835C6.63188 9.8835 6.33341 9.58502 6.33341 9.21683V7.00007C6.33341 6.63188 6.63188 6.3334 7.00007 6.3334ZM7.00007 4.11665C6.63188 4.11665 6.33341 4.41513 6.33341 4.78332C6.33341 5.1515 6.63188 5.44998 7.00007 5.44998H7.0059C7.37409 5.44998 7.67257 5.1515 7.67257 4.78332C7.67257 4.41513 7.37409 4.11665 7.0059 4.11665H7.00007Z"
-                              fill="#2D3440" /></g><defs><clipPath id="clip0_18758_945"><rect width="14" height="14" fill="white" /></clipPath></defs>
+                              fill="#2D3440" />
+                          </g>
+                          <defs>
+                            <clipPath id="clip0_18758_945">
+                              <rect width="14" height="14" fill="white" />
+                            </clipPath>
+                          </defs>
                         </svg>
-                        </button>
-                      <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите желаемую дату доставки</span>
+                      </button>
+                      <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите желаемую дату
+                        доставки</span>
                     </span>
                   </span>
                   <input class="input input-field" type="text" id="delivery-date" name="delivery-date"
@@ -539,12 +571,21 @@
                     <span class="tooltip tooltip-address">
                       <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-address">
                         <svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 14 14" fill="none"
-                          xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_18758_945)"><path fill-rule="evenodd" clip-rule="evenodd"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <g clip-path="url(#clip0_18758_945)">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
                               d="M7.00026 2.12508C4.30774 2.12508 2.12502 4.3078 2.12502 7.00032C2.12502 9.69284 4.30774 11.8756 7.00026 11.8756C9.69278 11.8756 11.8755 9.69284 11.8755 7.00032C11.8755 4.3078 9.69278 2.12508 7.00026 2.12508ZM0.791687 7.00032C0.791687 3.57142 3.57136 0.791748 7.00026 0.791748C10.4292 0.791748 13.2088 3.57142 13.2088 7.00032C13.2088 10.4292 10.4292 13.2089 7.00026 13.2089C3.57136 13.2089 0.791687 10.4292 0.791687 7.00032ZM7.00007 6.3334C7.36826 6.3334 7.66674 6.63188 7.66674 7.00007V9.21683C7.66674 9.58502 7.36826 9.8835 7.00007 9.8835C6.63188 9.8835 6.33341 9.58502 6.33341 9.21683V7.00007C6.33341 6.63188 6.63188 6.3334 7.00007 6.3334ZM7.00007 4.11665C6.63188 4.11665 6.33341 4.41513 6.33341 4.78332C6.33341 5.1515 6.63188 5.44998 7.00007 5.44998H7.0059C7.37409 5.44998 7.67257 5.1515 7.67257 4.78332C7.67257 4.41513 7.37409 4.11665 7.0059 4.11665H7.00007Z"
-                              fill="#2D3440" /></g><defs><clipPath id="clip0_18758_945"><rect width="14" height="14" fill="white" /></clipPath></defs>
+                              fill="#2D3440" />
+                          </g>
+                          <defs>
+                            <clipPath>
+                              <rect width="14" height="14" fill="white" />
+                            </clipPath>
+                          </defs>
                         </svg>
-                        </button>
-                      <span class="tooltip-text" role="tooltip" id="tooltip-label-address">Введите название улицы, дома и квартиры</span>
+                      </button>
+                      <span class="tooltip-text" role="tooltip" id="tooltip-label-address">Введите название улицы, дома
+                        и квартиры</span>
                     </span>
                   </span>
                   <input class="input input-field" type="text" id="delivery-address" name="delivery-address"
@@ -566,12 +607,15 @@
             <p class="communication-form-text communication-form-text-margin">Для заказов по телефону:</p>
             <span class="contacts-important"><a href="tel:+78128121212">+7 (812) 812-12-12</a></span>
             <p class="form-contacts-description">(с 10 до 20 ежедневно)</p>
+
+            <!-- При клике на кнопку появляется модальное окно -->
             <a class="button additional-button additional-button-text form-contacts-button" href="#">Форма обратной
               связи</a>
           </div>
         </section>
       </div>
     </main>
+
 
     <!-- Footer -->
     <footer class="gllacy-footer">
@@ -639,27 +683,38 @@
 
 
     <!-- Modal window -->
+    <!-- Элемент скрыт через свойство display: none у класса modal-container -->
+    <!-- Окно появляется при клике на кнопку Форма обратной связи -->
     <div class="modal-container">
       <div class="modal modal-form">
         <button class="modal-close-button">
           <span class="visually-hidden">Закрыть</span>
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M15.8858 5.05482C16.1461 4.79447 16.1461 4.37236 15.8858 4.11201C15.6254 3.85166 15.2033 3.85166 14.943 4.11201L9.99877 9.0562L5.05458 4.11201C4.79423 3.85166 4.37212 3.85166 4.11177 4.11201C3.85142 4.37236 3.85142 4.79447 4.11177 5.05482L9.05596 9.99901L4.11177 14.9432C3.85142 15.2036 3.85142 15.6257 4.11177 15.886C4.37212 16.1464 4.79423 16.1464 5.05458 15.886L9.99877 10.9418L14.943 15.886C15.2033 16.1464 15.6254 16.1464 15.8858 15.886C16.1461 15.6257 16.1461 15.2036 15.8858 14.9432L10.9416 9.99901L15.8858 5.05482Z"
+              fill="#2D3440" />
+          </svg>
         </button>
         <section class="modal-content">
           <h2 class="modal-title">Мы обязательно ответим вам!</h2>
-          <form class="application-form" action="#" method="post">
+          <form class="application-form" action="https://echo.htmlacademy.ru/" method="post">
             <div class="field-group">
               <label class="visually-hidden" for="name">Имя и фамилия</label>
-              <input class="input input-field application-form-field" type="text" id="name" name="name" placeholder="Имя и фамилия">
+              <input class="input input-field application-form-field" type="text" id="name" name="name"
+                placeholder="Имя и фамилия" required>
             </div>
             <div class="field-group">
               <label class="visually-hidden" for="email">Электронная почта</label>
-              <input class="input input-field application-form-field" type="text" id="email" name="email" placeholder="email@example.com">
+              <input class="input input-field application-form-field" type="text" id="email" name="email"
+                placeholder="email@example.com" required>
             </div>
             <div class="field-group">
               <label class="visually-hidden" for="comment">Комментарий</label>
-              <textarea class="input input-field application-form-field" type="text" id="comment" name="comment" rows="6" placeholder="В свободной форме"></textarea>
+              <textarea class="input input-field application-form-field" id="comment" name="comment"
+                rows="6" placeholder="В свободной форме"></textarea>
             </div>
-            <button class="button additional-button additional-button-text modal-window-button" type="submit">Отправить</button>
+            <button class="button additional-button additional-button-text modal-window-button"
+              type="submit">Отправить</button>
           </form>
         </section>
       </div>
