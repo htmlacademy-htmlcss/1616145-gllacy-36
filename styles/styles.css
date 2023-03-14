@@ -315,10 +315,14 @@ img {
 
 /* Slider */
 
+.slider-bottom-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  margin-top: 40px;
+}
+
 .slider-pagination {
-  position: absolute;
-  left: 0;
-  bottom: 0;
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
@@ -607,10 +611,19 @@ img {
 }
 
 .hero-block {
-  height: 554px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 554px;
   width: 1170px;
-  position: relative;
 }
+
+.slider-content {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+
 
 .slider-list {
   position: relative;
@@ -671,9 +684,8 @@ img {
 }
 
 .slider-information {
-  position: absolute;
-  top: 136px;
-  left: 70px;
+  margin-top: 136px;
+  margin-left: 70px;
   max-width: 470px;
 }
 
@@ -683,19 +695,22 @@ img {
 }
 
 
-
 .slider-item-second {
   position: absolute;
   transform: scale(0.33);
   opacity: 0.4;
   left: 30%;
+  top: 186px;
+  transform-origin: top;
 }
 
 .slider-item-third {
   position: absolute;
   transform: scale(0.33);
   opacity: 0.4;
-  left: 42%
+  left: 42%;
+  top: 186px;
+  transform-origin: top;
 }
 
 .slider-prev {
@@ -712,9 +727,6 @@ img {
 
 
 .social-buttons-list {
-  position: absolute;
-  right: 0;
-  bottom: 0;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
