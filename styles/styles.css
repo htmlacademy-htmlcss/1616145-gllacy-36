@@ -1519,6 +1519,7 @@ img {
   top: 50%;
   right: 13px;
   cursor: pointer;
+  pointer-events: none;
 }
 
 .range {
