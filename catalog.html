@@ -5,7 +5,10 @@
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="/images/favicon.ico">
   </head>
+
+
 
   <body>
 
@@ -19,7 +22,11 @@
           </a>
           <ul class="navigation-list">
             <li class="navigation-item dropdown-list-catalog">
-              <a class="navigation-link navigation-link-dropdown" href="catalog.html">
+
+              <!-- Стили для нажатой кнопки записаны в классе navigation-link-dropdown-opened -->
+              <!-- Если кнопка нажата, под кнопкой появляется выпадающий список popover-catalog-list -->
+              <!-- При клике на область вне popover, класс  navigation-link-dropdown-opened снимается с элемента -->
+              <button class="navigation-link navigation-link-dropdown">
                 Каталог
                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                   fill="none" viewBox="0 0 16 16">
@@ -27,17 +34,20 @@
                     d="M3.808 6.195a.667.667 0 1 0-.943.943l4.66 4.66a.665.665 0 0 0 .95.006l.006-.005 4.66-4.66a.667.667 0 1 0-.943-.944L8.003 10.39 3.808 6.195Z"
                     clip-rule="evenodd" />
                 </svg>
-              </a>
+              </button>
 
               <!-- Каталог: выпадающий список -->
+              <!-- Элемент скрыт через атрибут hidden -->
+              <!-- Должен появляться при клике на кнопку Каталог -->
               <div class="popover-list popover-catalog-list" hidden>
                 <ul class="catalog-list">
+                  <!-- Стили для текущей страницы в классе catalog-list-item-current -->
                   <li class="catalog-list-item catalog-new">
                     <a class="catalog-link " href="new.html">Новинки</a>
                   </li>
                   <li class="catalog-list-decor">
                   </li>
-                  <li class="catalog-list-item catalog-list-item-current">
+                  <li class="catalog-list-item">
                     <a class="catalog-link" href="cream.html">Сливочное</a>
                   </li>
                   <li class="catalog-list-item">
@@ -50,6 +60,7 @@
                     <a class="catalog-link" href="melorin.html">Мелорин</a>
                   </li>
                 </ul>
+              </div>
             </li>
             <li class="navigation-item">
               <a class="navigation-link" href="#">Доставка и оплата</a>
@@ -64,7 +75,12 @@
           <li class="navigation-user-item">
             <a class="tel-header" href="tel:+78005558628">+7 800 555-86-28</a>
           </li>
+
+
           <li class="navigation-user-item">
+            <!-- Стили для нажатой кнопки записаны в классе navigation-user-link-opened -->
+            <!-- Если кнопка нажата, под кнопкой появляется элемент popover-search -->
+            <!-- При клике на область вне popover, класс  navigation-user-link-opened снимается с элемента -->
             <a class="navigation-user-link header-icon-button" href="#">
               <span class="visually-hidden">Поиск</span>
               <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
@@ -75,9 +91,9 @@
               </svg>
             </a>
 
-
             <!-- Поповер: поиск -->
-
+            <!-- Элемент скрыт через атрибут hidden -->
+            <!-- Должен появляться при клике на кнопку поиска (с иконкой лупа) -->
             <div class="popover popover-search" hidden>
               <form class="popover-content">
                 <input class="input input-search" type="text" name="search" id="search" placeholder="Поиск по сайту">
@@ -86,7 +102,11 @@
             </div>
           </li>
 
+
           <li class="navigation-user-item">
+            <!-- Стили для нажатой кнопки записаны в классе navigation-user-link-opened -->
+            <!-- Если кнопка нажата, под кнопкой появляется элемент popover-enter -->
+            <!-- При клике на область вне popover, класс  navigation-user-link-opened снимается с элемента -->
             <a class="navigation-user-link icon-text-button" href="#">
               <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                 fill="none" viewBox="0 0 16 16">
@@ -98,11 +118,12 @@
             </a>
 
             <!-- Поповер: вход -->
-
+            <!-- Элемент скрыт через атрибут hidden -->
+            <!-- Должен появляться при клике на кнопку Вход -->
             <div class="popover popover-enter" hidden>
               <div class="popover-content">
                 <h2 class="popover-title">Личный кабинет</h2>
-                <form class="enter-form" action="#" method="post">
+                <form class="enter-form" action="https://echo.htmlacademy.ru/" method="post">
                   <input class="input" type="text" name="login" id="login-field" value="email@example.com">
                   <input class="input" type="password" name="password" id="password-field" value="******">
                   <div class="enter-buttons">
@@ -117,8 +138,12 @@
             </div>
           </li>
 
+
           <li class="navigation-user-item">
-            <a class="navigation-user-link icon-text-button navigation-user-link-opened" href="#">
+            <!-- Стили для нажатой кнопки записаны в классе navigation-user-link-opened -->
+            <!-- Если кнопка нажата, под кнопкой появляется элемент popover-basket-empty (если корзина пуста) или popover-basket-full (если в корзине есть товары) -->
+            <!-- При клике на область вне popover, класс  navigation-user-link-opened снимается с элемента -->
+            <a class="navigation-user-link icon-text-button" href="#">
               <span class="visually-hidden">Корзина</span>
               <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                 fill="none" viewBox="0 0 16 16">
@@ -130,7 +155,8 @@
             </a>
 
             <!-- Поповер: пустая корзина -->
-
+            <!-- Элемент скрыт через атрибут hidden -->
+            <!-- Должен появляться при клике на кнопку Корзина, если корзина пуста -->
             <div class="popover popover-basket-empty" hidden>
               <div class="popover-content">
                 <span class="popover-empty-basket-title">Ваша корзина пока пуста</span>
@@ -138,7 +164,9 @@
             </div>
 
             <!-- Поповер: в корзине есть товары -->
-            <div class="popover popover-basket-full">
+            <!-- Элемент скрыт через атрибут hidden -->
+            <!-- Должен появляться при клике на кнопку Корзина, если в корзине есть товары -->
+            <div class="popover popover-basket-full" hidden>
               <div class="popover-content">
                 <h2 class="popover-title">Корзина</h2>
                 <ul class="basket-items-list">
@@ -190,6 +218,8 @@
         </ul>
       </div>
     </header>
+
+
     <!-- Main -->
     <main class="main-catalog">
       <div class="container">
@@ -210,9 +240,10 @@
 
 
         <!-- Фильтры -->
+
         <section class="catalog-filter">
           <h2 class="visually-hidden">Фильтры в каталоге</h2>
-          <form class="catalog-filter-form" action="https://htmlacademy.ru/" method="get">
+          <form class="catalog-filter-form" action="https://echo.htmlacademy.ru/" method="get">
 
             <div class="group-one">
               <fieldset class="catalog-filter-group sorting">
@@ -237,36 +268,27 @@
                       </button>
                     </div>
                   </div>
-
-                  <!-- Нужны ли инпуты?
-                  <div class="range-wrapper-inputs">
-                    <label class="catalog-filter-label">
-                    <input class="range-input" type="number" value="100" name="min-price">
-                    </label>
-                    <label class="catalog-filter-label">
-                      <input class="range-input" type="number" value="500" name="max-price">
-                    </label>
-                  </div>
-                  -->
-
                 </div>
               </fieldset>
 
+
               <!-- Фильтр с радиокнопками -->
+
               <fieldset class="catalog-filter-group fat">
                 <legend class="catalog-filter-title">Жирность:</legend>
                 <div class="filter-fat-background">
                   <ul class="catalog-filter-list">
                     <li class="catalog-filter-item">
                       <label class="control">
-                        <input class="visually-hidden control-input" type="radio" name="fat-group" value="0" checked>
+                        <input class="visually-hidden control-input" type="radio" name="fat-group" value="0">
                         <span class="control-radio"></span>
                         <span class="control-label">0%</span>
                       </label>
                     </li>
                     <li class="catalog-filter-item">
                       <label class="control">
-                        <input class="visually-hidden control-input" type="radio" name="fat-group" value="before-10">
+                        <input class="visually-hidden control-input" type="radio" name="fat-group" value="before-10"
+                          checked>
                         <span class="control-radio"></span>
                         <span class="control-label">до 10%</span>
                       </label>
@@ -280,8 +302,7 @@
                     </li>
                     <li class="catalog-filter-item">
                       <label class="control">
-                        <input class="visually-hidden control-input" type="radio" name="fat-group" value="above-30"
-                          disabled checked>
+                        <input class="visually-hidden control-input" type="radio" name="fat-group" value="above-30">
                         <span class="control-radio"></span>
                         <span class="control-label">выше 30%</span>
                       </label>
@@ -290,8 +311,8 @@
                 </div>
               </fieldset>
             </div>
-
             <div class="group-two">
+
 
               <!-- Фильтр с чекбоксами-->
 
@@ -302,7 +323,7 @@
                     <li class="catalog-filter-item">
                       <label class="control">
                         <input class="visually-hidden control-input" type="checkbox" name="chocolate" checked>
-                        <div class="control-mark">
+                        <span class="control-mark">
                           <svg class="control-mark-check" width="16" height="16" viewBox="0 0 16 16" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -313,14 +334,14 @@
                             <path fill-rule="evenodd" clip-rule="evenodd"
                               d="M1.61513 1.61538C1.79569 1.43483 2.04057 1.33339 2.2959 1.33339H13.7029C13.9446 1.33339 14.0431 1.36192 14.0976 1.386C14.1553 1.4115 14.2281 1.45987 14.3836 1.61538C14.5908 1.82258 14.6656 2.04763 14.6656 2.29615V13.6647C14.6649 13.6771 14.6646 13.6896 14.6646 13.7021C14.6646 13.9574 14.5632 14.2023 14.3826 14.3829C14.2021 14.5634 13.9572 14.6648 13.7018 14.6648H2.2959C2.04057 14.6648 1.79569 14.5634 1.61513 14.3829C1.43458 14.2023 1.33315 13.9574 1.33315 13.7021V2.29615C1.33315 2.04081 1.43458 1.79593 1.61513 1.61538ZM15.8381 14.5437C15.7237 14.834 15.5503 15.1008 15.3254 15.3257C14.8948 15.7563 14.3108 15.9982 13.7018 15.9982H2.2959C1.68694 15.9982 1.10293 15.7563 0.672325 15.3257C0.241725 14.8951 -0.000183105 14.311 -0.000183105 13.7021V2.29615C-0.000183105 1.68719 0.241725 1.10317 0.672325 0.672569C0.898314 0.44658 1.16656 0.272564 1.45849 0.158214C1.57473 0.0595667 1.72523 6.10352e-05 1.88963 6.10352e-05H2.2959H13.7029C14.0403 6.10352e-05 14.3458 0.0379688 14.6365 0.166421C14.924 0.293453 15.1376 0.483702 15.3265 0.672572C15.808 1.15413 15.999 1.72995 15.999 2.29615V14.1094C15.999 14.2753 15.9384 14.4271 15.8381 14.5437Z" />
                           </svg>
-                        </div>
+                        </span>
                         <span class="control-label">шоколадные</span>
                       </label>
                     </li>
                     <li class="catalog-filter-item">
                       <label class="control">
                         <input class="visually-hidden control-input" type="checkbox" name="sugar" checked>
-                        <div class="control-mark">
+                        <span class="control-mark">
                           <svg class="control-mark-check" width="16" height="16" viewBox="0 0 16 16" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -331,14 +352,14 @@
                             <path fill-rule="evenodd" clip-rule="evenodd"
                               d="M1.61513 1.61538C1.79569 1.43483 2.04057 1.33339 2.2959 1.33339H13.7029C13.9446 1.33339 14.0431 1.36192 14.0976 1.386C14.1553 1.4115 14.2281 1.45987 14.3836 1.61538C14.5908 1.82258 14.6656 2.04763 14.6656 2.29615V13.6647C14.6649 13.6771 14.6646 13.6896 14.6646 13.7021C14.6646 13.9574 14.5632 14.2023 14.3826 14.3829C14.2021 14.5634 13.9572 14.6648 13.7018 14.6648H2.2959C2.04057 14.6648 1.79569 14.5634 1.61513 14.3829C1.43458 14.2023 1.33315 13.9574 1.33315 13.7021V2.29615C1.33315 2.04081 1.43458 1.79593 1.61513 1.61538ZM15.8381 14.5437C15.7237 14.834 15.5503 15.1008 15.3254 15.3257C14.8948 15.7563 14.3108 15.9982 13.7018 15.9982H2.2959C1.68694 15.9982 1.10293 15.7563 0.672325 15.3257C0.241725 14.8951 -0.000183105 14.311 -0.000183105 13.7021V2.29615C-0.000183105 1.68719 0.241725 1.10317 0.672325 0.672569C0.898314 0.44658 1.16656 0.272564 1.45849 0.158214C1.57473 0.0595667 1.72523 6.10352e-05 1.88963 6.10352e-05H2.2959H13.7029C14.0403 6.10352e-05 14.3458 0.0379688 14.6365 0.166421C14.924 0.293453 15.1376 0.483702 15.3265 0.672572C15.808 1.15413 15.999 1.72995 15.999 2.29615V14.1094C15.999 14.2753 15.9384 14.4271 15.8381 14.5437Z" />
                           </svg>
-                        </div>
+                        </span>
                         <span class="control-label">сахарные посыпки</span>
                       </label>
                     </li>
                     <li class="catalog-filter-item">
                       <label class="control">
                         <input class="visually-hidden control-input" type="checkbox" name="fruit">
-                        <div class="control-mark">
+                        <span class="control-mark">
                           <svg class="control-mark-check" width="16" height="16" viewBox="0 0 16 16" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -349,14 +370,14 @@
                             <path fill-rule="evenodd" clip-rule="evenodd"
                               d="M1.61513 1.61538C1.79569 1.43483 2.04057 1.33339 2.2959 1.33339H13.7029C13.9446 1.33339 14.0431 1.36192 14.0976 1.386C14.1553 1.4115 14.2281 1.45987 14.3836 1.61538C14.5908 1.82258 14.6656 2.04763 14.6656 2.29615V13.6647C14.6649 13.6771 14.6646 13.6896 14.6646 13.7021C14.6646 13.9574 14.5632 14.2023 14.3826 14.3829C14.2021 14.5634 13.9572 14.6648 13.7018 14.6648H2.2959C2.04057 14.6648 1.79569 14.5634 1.61513 14.3829C1.43458 14.2023 1.33315 13.9574 1.33315 13.7021V2.29615C1.33315 2.04081 1.43458 1.79593 1.61513 1.61538ZM15.8381 14.5437C15.7237 14.834 15.5503 15.1008 15.3254 15.3257C14.8948 15.7563 14.3108 15.9982 13.7018 15.9982H2.2959C1.68694 15.9982 1.10293 15.7563 0.672325 15.3257C0.241725 14.8951 -0.000183105 14.311 -0.000183105 13.7021V2.29615C-0.000183105 1.68719 0.241725 1.10317 0.672325 0.672569C0.898314 0.44658 1.16656 0.272564 1.45849 0.158214C1.57473 0.0595667 1.72523 6.10352e-05 1.88963 6.10352e-05H2.2959H13.7029C14.0403 6.10352e-05 14.3458 0.0379688 14.6365 0.166421C14.924 0.293453 15.1376 0.483702 15.3265 0.672572C15.808 1.15413 15.999 1.72995 15.999 2.29615V14.1094C15.999 14.2753 15.9384 14.4271 15.8381 14.5437Z" />
                           </svg>
-                        </div>
+                        </span>
                         <span class="control-label">фрукты</span>
                       </label>
                     </li>
                     <li class="catalog-filter-item">
                       <label class="control">
                         <input class="visually-hidden control-input" type="checkbox" name="syrup">
-                        <div class="control-mark">
+                        <span class="control-mark">
                           <svg class="control-mark-check" width="16" height="16" viewBox="0 0 16 16" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -367,14 +388,14 @@
                             <path fill-rule="evenodd" clip-rule="evenodd"
                               d="M1.61513 1.61538C1.79569 1.43483 2.04057 1.33339 2.2959 1.33339H13.7029C13.9446 1.33339 14.0431 1.36192 14.0976 1.386C14.1553 1.4115 14.2281 1.45987 14.3836 1.61538C14.5908 1.82258 14.6656 2.04763 14.6656 2.29615V13.6647C14.6649 13.6771 14.6646 13.6896 14.6646 13.7021C14.6646 13.9574 14.5632 14.2023 14.3826 14.3829C14.2021 14.5634 13.9572 14.6648 13.7018 14.6648H2.2959C2.04057 14.6648 1.79569 14.5634 1.61513 14.3829C1.43458 14.2023 1.33315 13.9574 1.33315 13.7021V2.29615C1.33315 2.04081 1.43458 1.79593 1.61513 1.61538ZM15.8381 14.5437C15.7237 14.834 15.5503 15.1008 15.3254 15.3257C14.8948 15.7563 14.3108 15.9982 13.7018 15.9982H2.2959C1.68694 15.9982 1.10293 15.7563 0.672325 15.3257C0.241725 14.8951 -0.000183105 14.311 -0.000183105 13.7021V2.29615C-0.000183105 1.68719 0.241725 1.10317 0.672325 0.672569C0.898314 0.44658 1.16656 0.272564 1.45849 0.158214C1.57473 0.0595667 1.72523 6.10352e-05 1.88963 6.10352e-05H2.2959H13.7029C14.0403 6.10352e-05 14.3458 0.0379688 14.6365 0.166421C14.924 0.293453 15.1376 0.483702 15.3265 0.672572C15.808 1.15413 15.999 1.72995 15.999 2.29615V14.1094C15.999 14.2753 15.9384 14.4271 15.8381 14.5437Z" />
                           </svg>
-                        </div>
+                        </span>
                         <span class="control-label">сиропы</span>
                       </label>
                     </li>
                     <li class="catalog-filter-item">
                       <label class="control">
-                        <input class="visually-hidden control-input" type="checkbox" name="jams" disabled checked>
-                        <div class="control-mark">
+                        <input class="visually-hidden control-input" type="checkbox" name="jams">
+                        <span class="control-mark">
                           <svg class="control-mark-check" width="16" height="16" viewBox="0 0 16 16" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -385,7 +406,7 @@
                             <path fill-rule="evenodd" clip-rule="evenodd"
                               d="M1.61513 1.61538C1.79569 1.43483 2.04057 1.33339 2.2959 1.33339H13.7029C13.9446 1.33339 14.0431 1.36192 14.0976 1.386C14.1553 1.4115 14.2281 1.45987 14.3836 1.61538C14.5908 1.82258 14.6656 2.04763 14.6656 2.29615V13.6647C14.6649 13.6771 14.6646 13.6896 14.6646 13.7021C14.6646 13.9574 14.5632 14.2023 14.3826 14.3829C14.2021 14.5634 13.9572 14.6648 13.7018 14.6648H2.2959C2.04057 14.6648 1.79569 14.5634 1.61513 14.3829C1.43458 14.2023 1.33315 13.9574 1.33315 13.7021V2.29615C1.33315 2.04081 1.43458 1.79593 1.61513 1.61538ZM15.8381 14.5437C15.7237 14.834 15.5503 15.1008 15.3254 15.3257C14.8948 15.7563 14.3108 15.9982 13.7018 15.9982H2.2959C1.68694 15.9982 1.10293 15.7563 0.672325 15.3257C0.241725 14.8951 -0.000183105 14.311 -0.000183105 13.7021V2.29615C-0.000183105 1.68719 0.241725 1.10317 0.672325 0.672569C0.898314 0.44658 1.16656 0.272564 1.45849 0.158214C1.57473 0.0595667 1.72523 6.10352e-05 1.88963 6.10352e-05H2.2959H13.7029C14.0403 6.10352e-05 14.3458 0.0379688 14.6365 0.166421C14.924 0.293453 15.1376 0.483702 15.3265 0.672572C15.808 1.15413 15.999 1.72995 15.999 2.29615V14.1094C15.999 14.2753 15.9384 14.4271 15.8381 14.5437Z" />
                           </svg>
-                        </div>
+                        </span>
                         <span class="control-label">джемы</span>
                       </label>
                     </li>

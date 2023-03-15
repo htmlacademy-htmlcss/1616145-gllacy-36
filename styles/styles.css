@@ -50,6 +50,15 @@ body {
   justify-content: space-between;
 }
 
+
+.body-blue {
+  background-color: #69A9FF;
+}
+
+.body-yellow {
+  background-color: #FCC850;
+}
+
 *,
 *::before,
 *::after {
@@ -304,10 +313,14 @@ img {
 
 /* Slider */
 
+.slider-bottom-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  margin-top: 40px;
+}
+
 .slider-pagination {
-  position: absolute;
-  left: 0;
-  bottom: 0;
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
@@ -400,6 +413,8 @@ img {
   width: 100%
 }
 
+
+
 .input::placeholder {
   color: #B9B9B9;
 }
@@ -436,11 +451,11 @@ img {
   box-shadow: inset 0 0 0 1px #B9B9B9;
 }
 
+
 /* Header */
 
 .gllacy-header {
   color: #2D3440;
-  background-color: #FEAFC3;
 }
 
 .navigation,
@@ -487,6 +502,7 @@ img {
   border-radius: 30px;
 }
 
+
 .navigation-link:focus {
   background-color: rgba(252, 252, 252, 0.5);
   border-radius: 30px;
@@ -501,34 +517,39 @@ img {
 .navigation-link-dropdown {
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 8px;
   border-radius: 30px;
+  border: 0;
+  background-color: transparent;
+  letter-spacing: 0.4px;
+  cursor: pointer;
 }
+
 
 .navigation-link-dropdown-opened svg {
   transform: scaleY(-1);
   margin-top: 2px;
-  }
+}
 
-  .navigation-link-dropdown-opened {
-    background-color: #FF4A78;
-    color: #FCFCFC;
-  }
+.navigation-link-dropdown-opened {
+  background-color: #FF4A78;
+  color: #FCFCFC;
+}
 
-  .navigation-link-dropdown-opened:hover {
-    background-color: #FF4A78;
-    opacity: 0.6;
-  }
+.navigation-link-dropdown-opened:hover {
+  background-color: #FF4A78;
+  opacity: 0.6;
+}
 
-  .navigation-link-dropdown-opened:focus {
-    background-color: #FF4A78;
-    box-shadow: inset 0 0 0 2px #000000;
-  }
+.navigation-link-dropdown-opened:focus {
+  background-color: #FF4A78;
+  box-shadow: inset 0 0 0 2px #000000;
+}
 
-  .navigation-link-dropdown-opened:active {
-    background-color: #FF4A78;
-    opacity: 0.3;
-  }
+.navigation-link-dropdown-opened:active {
+  background-color: #FF4A78;
+  opacity: 0.3;
+}
 
 
 
@@ -547,7 +568,6 @@ img {
   font-size: 16px;
   line-height: 20px;
   color: #2D3440;
-  background-color: #FEAFC3;
   padding: 0;
   text-decoration: none;
 }
@@ -590,10 +610,19 @@ img {
 }
 
 .hero-block {
-  height: 554px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 554px;
   width: 1170px;
-  position: relative;
 }
+
+.slider-content {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+
 
 .slider-list {
   position: relative;
@@ -654,9 +683,8 @@ img {
 }
 
 .slider-information {
-  position: absolute;
-  top: 136px;
-  left: 70px;
+  margin-top: 136px;
+  margin-left: 70px;
   max-width: 470px;
 }
 
@@ -666,19 +694,22 @@ img {
 }
 
 
-
 .slider-item-second {
   position: absolute;
   transform: scale(0.33);
   opacity: 0.4;
   left: 30%;
+  top: 186px;
+  transform-origin: top;
 }
 
 .slider-item-third {
   position: absolute;
   transform: scale(0.33);
   opacity: 0.4;
-  left: 42%
+  left: 42%;
+  top: 186px;
+  transform-origin: top;
 }
 
 .slider-prev {
@@ -695,9 +726,6 @@ img {
 
 
 .social-buttons-list {
-  position: absolute;
-  right: 0;
-  bottom: 0;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -1192,6 +1220,7 @@ img {
   padding: 0;
   margin: 0;
   display: block;
+  cursor: pointer
 }
 
 .tooltip-icon {
@@ -1215,7 +1244,7 @@ img {
   box-shadow: 0 0 8px 0 rgba(194, 194, 194, 0.2);
   position: absolute;
   margin-left: 26px;
-  top: 100%;
+  top: 50%;
   transform: translateY(-50%);
   z-index: 1;
   border-radius: 1px;
@@ -1232,14 +1261,14 @@ img {
   width: 14px;
   height: 14px;
   position: absolute;
-  right: 96%;
-  top: 20%;
-  background-color: #FFFFFF;
-  border-top: 1px solid #B9B9B9;
-  border-right: 1px solid #B9B9B9;
-  transform: rotate(-135deg);
+  z-index: -1;
+  left: -7.5px;
+  top: 50%;
+  background-color: #FCFCFC;
+  border-left: 1px solid #B9B9B9;
+  border-bottom: 1px solid #B9B9B9;
+  transform: translateY(-50%) rotate(45deg);
 }
-
 
 
 
@@ -1247,7 +1276,6 @@ img {
 
 .gllacy-footer {
   color: #2D3440;
-  background-color: #FEAFC3;
 }
 
 .footer-container {
@@ -1338,7 +1366,7 @@ img {
 .breadcrumbs-item ~ .breadcrumbs-item::before {
   display: inline-block;
   content: "";
-  margin: 4px 8px 0;
+  margin: 4px 7px 0;
   background-image: url(../images/vector/outline-icon/chevrons-right.svg);
   background-repeat: no-repeat;
   background-size: contain;
@@ -1397,7 +1425,7 @@ img {
 
 .catalog-filter {
   display: flex;
-  margin-bottom: 44px;
+  margin-bottom: 45px;
   font-family: inherit;
   font-size: 14px;
   line-height: 20px;
@@ -1407,7 +1435,7 @@ img {
 .catalog-filter-title {
   font-size: 14px;
   line-height: 20px;
-  margin-left: 16px;
+  margin-left: 14px;
   margin-bottom: 8px;
 }
 
@@ -1461,6 +1489,7 @@ img {
   border: 0;
   outline: 0;
   appearance: none;
+  cursor: pointer;
 }
 
 .catalog-dropdown:hover {
@@ -1489,6 +1518,8 @@ img {
   transform: translateY(-50%);
   top: 50%;
   right: 13px;
+  cursor: pointer;
+  pointer-events: none;
 }
 
 .range {
@@ -1544,12 +1575,12 @@ img {
 
 .toggle-min {
   top: -8px;
-  left: 0;
+  left: 15%;
 }
 
 .toggle-max {
   top: -8px;
-  right: 0;
+  right: 31%;
 }
 
 .filter-ingredient-background,
@@ -1574,11 +1605,15 @@ img {
   align-items: center;
 }
 
+.control-label {
+  white-space: nowrap;
+}
 
 .control {
   position: relative;
   display: block;
   padding-left: 25px;
+  cursor: pointer;
 }
 
 .control-mark {
@@ -1613,7 +1648,7 @@ img {
   fill: #FCFCFC;
 }
 
-.control-mark:disabled path {
+.control-input[type="checkbox"]:disabled + .control-mark path {
   fill: rgba(45, 52, 64, 0.5);
 }
 
@@ -1861,9 +1896,10 @@ img {
   padding-bottom: 8px;
 }
 
-.catalog-list-decor {
+.catalog-new::after {
+  content: "";
   display: block;
-  margin: 3px 16px 4px;
+  margin: 11px 2px -4px;
   height: 1px;
   background-color: #B9B9B9;
 }
@@ -2029,19 +2065,15 @@ img {
   width: 570px;
 }
 
-
 .modal-close-button {
   position: absolute;
   padding: 0;
-  top: 0;
-  right: 0;
-  width: 52px;
-  height: 52px;
-  background-color: #ffffff;
+  top: 23px;
+  right: 21px;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
   border: none;
-  background-image: url("../images/vector/outline-icon/cross.svg");
-  background-repeat: no-repeat;
-  background-position: center;
   cursor: pointer;
   border-radius: 8px;
 }
@@ -2079,11 +2111,11 @@ img {
   resize: none;
 }
 
-.modal-window-button{
+.modal-window-button {
   align-self: flex-end;
   margin-top: 16px;
 }
 
 .modal-container {
   display: none;
- }
+}
