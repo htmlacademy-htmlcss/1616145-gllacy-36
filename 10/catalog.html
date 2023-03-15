@@ -5,12 +5,13 @@
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="/images/favicon.ico">
     <base href="https://htmlacademy-htmlcss.github.io/1616145-gllacy-36/10/">
 </head>
 
 
-  <!-- Цвет фона страницы переключается за счет подстановки классов в body: body-pink, body-blue или body-yellow -->
-  <body class="body-pink">
+
+  <body>
 
     <!-- Header -->
     <header class="gllacy-header">
@@ -41,7 +42,7 @@
               <!-- Должен появляться при клике на кнопку Каталог -->
               <div class="popover-list popover-catalog-list" hidden>
                 <ul class="catalog-list">
-                   <!-- Стили для текущей страницы в классе catalog-list-item-current -->
+                  <!-- Стили для текущей страницы в классе catalog-list-item-current -->
                   <li class="catalog-list-item catalog-new">
                     <a class="catalog-link " href="new.html">Новинки</a>
                   </li>
@@ -80,7 +81,7 @@
           <li class="navigation-user-item">
             <!-- Стили для нажатой кнопки записаны в классе navigation-user-link-opened -->
             <!-- Если кнопка нажата, под кнопкой появляется элемент popover-search -->
-              <!-- При клике на область вне popover, класс  navigation-user-link-opened снимается с элемента -->
+            <!-- При клике на область вне popover, класс  navigation-user-link-opened снимается с элемента -->
             <a class="navigation-user-link header-icon-button" href="#">
               <span class="visually-hidden">Поиск</span>
               <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
@@ -93,7 +94,7 @@
 
             <!-- Поповер: поиск -->
             <!-- Элемент скрыт через атрибут hidden -->
-             <!-- Должен появляться при клике на кнопку поиска (с иконкой лупа) -->
+            <!-- Должен появляться при клике на кнопку поиска (с иконкой лупа) -->
             <div class="popover popover-search" hidden>
               <form class="popover-content">
                 <input class="input input-search" type="text" name="search" id="search" placeholder="Поиск по сайту">
@@ -119,7 +120,7 @@
 
             <!-- Поповер: вход -->
             <!-- Элемент скрыт через атрибут hidden -->
-             <!-- Должен появляться при клике на кнопку Вход -->
+            <!-- Должен появляться при клике на кнопку Вход -->
             <div class="popover popover-enter" hidden>
               <div class="popover-content">
                 <h2 class="popover-title">Личный кабинет</h2>
@@ -156,7 +157,7 @@
 
             <!-- Поповер: пустая корзина -->
             <!-- Элемент скрыт через атрибут hidden -->
-               <!-- Должен появляться при клике на кнопку Корзина, если корзина пуста -->
+            <!-- Должен появляться при клике на кнопку Корзина, если корзина пуста -->
             <div class="popover popover-basket-empty" hidden>
               <div class="popover-content">
                 <span class="popover-empty-basket-title">Ваша корзина пока пуста</span>
@@ -287,7 +288,8 @@
                     </li>
                     <li class="catalog-filter-item">
                       <label class="control">
-                        <input class="visually-hidden control-input" type="radio" name="fat-group" value="before-10" checked>
+                        <input class="visually-hidden control-input" type="radio" name="fat-group" value="before-10"
+                          checked>
                         <span class="control-radio"></span>
                         <span class="control-label">до 10%</span>
                       </label>
