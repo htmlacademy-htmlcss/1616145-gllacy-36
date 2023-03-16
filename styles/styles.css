@@ -754,6 +754,7 @@ img {
 }
 
 .raspberry {
+  background-color: #FF7799;
   background-image: url(../images/raster/background-images/raspberry.png);
   background-size: contain;
   background-repeat: no-repeat;
@@ -761,6 +762,7 @@ img {
 }
 
 .marshmallow {
+  background-color: #FF7799;
   background-image: url(../images/raster/background-images/marshmellow.png);
   background-size: contain;
   background-repeat: no-repeat;
@@ -848,6 +850,7 @@ img {
 }
 
 .about {
+  background-color: #F0E3C9;
   background-image: url(../images/raster/background-images/waffle.jpg);
   background-size: cover;
   background-repeat: repeat;
@@ -875,18 +878,22 @@ img {
 }
 
 .decor-image-icecream {
+  background-color: #FFFFFF;
   background-image: url(../images/vector/decor-icon/ice-cream.svg);
 }
 
 .decor-image-cow {
+  background-color: #FFFFFF;
   background-image: url(../images/vector/decor-icon/cow.svg);
 }
 
 .decor-image-leaf {
+  background-color: #FFFFFF;
   background-image: url(../images/vector/decor-icon/leaf.svg);
 }
 
 .decor-image-thermometer {
+  background-color: #FFFFFF;
   background-image: url(../images/vector/decor-icon/thermometer.svg);
 }
 
@@ -931,6 +938,7 @@ img {
   flex-direction: column;
   padding: 33px 32px 32px 32px;
   gap: 12px;
+  background-color: #FFFFFF;
   background-image: url(../images/raster/background-images/news.jpg);
   background-repeat: no-repeat;
   border-radius: 16px;
@@ -955,6 +963,7 @@ img {
 .subscribe {
   display: flex;
   flex-direction: column;
+  background-color: #FFFFFF;
   background-image: url(../images/raster/background-images/line.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -1049,6 +1058,7 @@ img {
   top: 0;
   display: block;
   content: "";
+  background-color: #F6F6F6;
   background-image: url(../images/raster/background-images/delivery.jpg);
   background-size: 1228px auto;
   background-repeat: no-repeat;
@@ -1084,6 +1094,7 @@ img {
 }
 
 .contacts {
+  background-color: #EEE2E2;
   background-image: url(../images/raster/background-images/feedback.jpg);
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -1345,6 +1356,7 @@ img {
   display: inline-block;
   content: "";
   margin: 4px 7px 0;
+  background-color: #FEAFC3;
   background-image: url(../images/vector/outline-icon/chevrons-right.svg);
   background-repeat: no-repeat;
   background-size: contain;
@@ -1487,6 +1499,7 @@ img {
   content: "";
   height: 16px;
   width: 16px;
+  background-color: rgba(252, 252, 252, 0.3);
   background-image: url(../images/vector/outline-icon/arrow-down.svg);
   background-size: contain;
   background-position: center;
@@ -1960,6 +1973,7 @@ img {
   width: 16px;
   height: 16px;
   cursor: pointer;
+  background-color: #FCFCFC;
   background-image: url(../images/vector/outline-icon/cross.svg);
   background-position: center;
   opacity: 0.4;
