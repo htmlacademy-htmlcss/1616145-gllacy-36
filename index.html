@@ -9,6 +9,7 @@
 </head>
 
 <!-- Чтобы поменять цвет фона страницы при переключении слайдера, нужно подставить в body класс body-blue (второй слайд) или body-yellow (третий слайд) -->
+
 <body>
 
   <!-- Header -->
@@ -25,7 +26,7 @@
             <!-- Стили для нажатой кнопки записаны в классе navigation-link-dropdown-opened -->
             <!-- Если кнопка нажата, под кнопкой появляется выпадающий список popover-catalog-list -->
             <!-- При клике на область вне popover, класс  navigation-link-dropdown-opened снимается с элемента -->
-            <button class="navigation-link navigation-link-dropdown">
+            <button type="button" class="navigation-link navigation-link-dropdown">
               Каталог
               <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                 fill="none" viewBox="0 0 16 16">
@@ -92,8 +93,10 @@
           <!-- Должен появляться при клике на кнопку поиска (с иконкой лупа) -->
           <div class="popover popover-search" hidden>
             <form class="popover-content">
+              <label class="visually-hidden" for="search">Поиск по сайту</label>
               <input class="input input-search" type="text" name="search" id="search" placeholder="Поиск по сайту">
-              <input class="clear" type="reset" value="">
+              <label class="visually-hidden" for="reset">Стереть значение</label>
+              <input class="clear" type="reset" id="reset" name="search-reset" value="">
             </form>
           </div>
         </li>
@@ -119,10 +122,14 @@
             <div class="popover-content">
               <h2 class="popover-title">Личный кабинет</h2>
               <form class="enter-form" action="https://echo.htmlacademy.ru/" method="post">
+                <label class="visually-hidden" for="login-field">Введите логин</label>
                 <input class="input" type="text" name="login" id="login-field" value="email@example.com">
+                <label class="visually-hidden" for="password-field">Введите пароль</label>
                 <input class="input" type="password" name="password" id="password-field" value="******">
                 <div class="enter-buttons">
-                  <input class="button additional-button additional-button-text" type="submit" value="Войти">
+                  <label class="visually-hidden" for="enter">Войти</label>
+                  <input class="button additional-button additional-button-text" type="submit" id="enter" name="enter"
+                    value="Войти">
                   <div class="enter-link">
                     <a class="enter-link-text" href="#">Забыли пароль?</a>
                     <a class="enter-link-text" href="#">Регистрация</a>
@@ -202,8 +209,8 @@
                 </li>
               </ul>
               <div class="basket-total">
-                <button class="button additional-button additional-button-text basket-button-order"
-                  type="submit">Оформить заказ</button>
+                <button type="submit"
+                  class="button additional-button additional-button-text basket-button-order">Оформить заказ</button>
                 <span class="basket-information-total">Итого: 790 ₽</span>
               </div>
             </div>
@@ -270,7 +277,7 @@
 
           <!-- Кнопки со стрелками для переключения слайдов -->
           <div class="slider-buttons-arrow">
-            <button class="slider-button slider-prev" type="button">
+            <button type="button" class="slider-button slider-prev">
               <span class="visually-hidden">Предыдущее фото</span>
               <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                 viewBox="0 0 16 16">
@@ -279,7 +286,7 @@
                   clip-rule="evenodd" />
               </svg>
             </button>
-            <button class="slider-button slider-next" type="button">
+            <button type="button" class="slider-button slider-next">
               <span class="visually-hidden">Следующее фото</span>
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                 <path fill-rule="evenodd"
@@ -294,17 +301,17 @@
           <!-- Пагинация в слайдере -->
           <ol class="slider-pagination">
             <li class="slider-pagination-item">
-              <button class="slider-pagination-button slider-pagination-button-current" type="button">
+              <button type="button" class="slider-pagination-button slider-pagination-button-current">
                 <span class="visually-hidden">1 фото</span>
               </button>
             </li>
             <li class="slider-pagination-item">
-              <button class="slider-pagination-button" type="button">
+              <button type="button" class="slider-pagination-button">
                 <span class="visually-hidden">2 фото</span>
               </button>
             </li>
             <li class="slider-pagination-item">
-              <button class="slider-pagination-button" type="button">
+              <button type="button" class="slider-pagination-button">
                 <span class="visually-hidden">3 фото</span>
               </button>
             </li>
@@ -516,8 +523,8 @@
               <label class="visually-hidden" for="subscribe-email">Email</label>
               <input class="input input-field" placeholder="email@example.com" type="email" name="subscribe-email"
                 id="subscribe-email">
-              <button class="button additional-button additional-button-text button-subscribe-form"
-                type="submit">Отправить</button>
+              <button type="submit"
+                class="button additional-button additional-button-text button-subscribe-form">Отправить</button>
             </form>
           </div>
         </section>
@@ -541,7 +548,7 @@
                 <span class="form-label">
                   <label class="input-label-text" for="delivery-date">Дата</label>
                   <span class="tooltip tooltip-date ">
-                    <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date">
+                    <button type="button" class="tooltip-toggle" aria-labelledby="tooltip-label-date">
                       <svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 14 14" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_18758_945)">
@@ -572,7 +579,7 @@
                 <span class="form-label">
                   <label class="input-label-text" for="delivery-address">Адрес</label>
                   <span class="tooltip tooltip-address">
-                    <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-address">
+                    <button type="button" class="tooltip-toggle" aria-labelledby="tooltip-label-address">
                       <svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 14 14" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_18758_945)">
@@ -595,10 +602,9 @@
                   placeholder="ул. Большая Конюшенная, 19/8" required>
               </p>
             </div>
-            <button class="button additional-button additional-button-text delivery-form-button"
-              type="submit">Отправить</button>
+            <button type="submit"
+              class="button additional-button additional-button-text delivery-form-button">Отправить</button>
           </form>
-
         </div>
       </section>
 
@@ -688,7 +694,7 @@
   <!-- Окно появляется при клике на кнопку Форма обратной связи -->
   <div class="modal-container">
     <div class="modal modal-form">
-      <button class="modal-close-button">
+      <button type="button" class="modal-close-button">
         <span class="visually-hidden">Закрыть</span>
         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd"
@@ -714,8 +720,8 @@
             <textarea class="input input-field application-form-field" id="comment" name="comment" rows="6"
               placeholder="В свободной форме"></textarea>
           </div>
-          <button class="button additional-button additional-button-text modal-window-button"
-            type="submit">Отправить</button>
+          <button type="submit"
+            class="button additional-button additional-button-text modal-window-button">Отправить</button>
         </form>
       </section>
     </div>

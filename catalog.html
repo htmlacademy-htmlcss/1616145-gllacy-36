@@ -24,7 +24,7 @@
             <!-- Стили для нажатой кнопки записаны в классе navigation-link-dropdown-opened -->
             <!-- Если кнопка нажата, под кнопкой появляется выпадающий список popover-catalog-list -->
             <!-- При клике на область вне popover, класс  navigation-link-dropdown-opened снимается с элемента -->
-            <button class="navigation-link navigation-link-dropdown">
+            <button type="button" class="navigation-link navigation-link-dropdown">
               Каталог
               <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                 fill="none" viewBox="0 0 16 16">
@@ -43,8 +43,6 @@
                 <!-- Стили для текущей страницы в классе catalog-list-item-current -->
                 <li class="catalog-list-item catalog-new">
                   <a class="catalog-link " href="#">Новинки</a>
-                </li>
-                <li class="catalog-list-decor">
                 </li>
                 <li class="catalog-list-item">
                   <a class="catalog-link" href="catalog.html">Сливочное</a>
@@ -93,8 +91,10 @@
           <!-- Должен появляться при клике на кнопку поиска (с иконкой лупа) -->
           <div class="popover popover-search" hidden>
             <form class="popover-content">
+              <label class="visually-hidden" for="search">Поиск по сайту</label>
               <input class="input input-search" type="text" name="search" id="search" placeholder="Поиск по сайту">
-              <input class="clear" type="reset" value="">
+              <label class="visually-hidden" for="reset">Стереть значение</label>
+              <input class="clear" type="reset" id="reset" name="search-reset" value="">
             </form>
           </div>
         </li>
@@ -120,10 +120,14 @@
             <div class="popover-content">
               <h2 class="popover-title">Личный кабинет</h2>
               <form class="enter-form" action="https://echo.htmlacademy.ru/" method="post">
+                <label class="visually-hidden" for="login-field">Введите логин</label>
                 <input class="input" type="text" name="login" id="login-field" value="email@example.com">
+                <label class="visually-hidden" for="password-field">Введите пароль</label>
                 <input class="input" type="password" name="password" id="password-field" value="******">
                 <div class="enter-buttons">
-                  <input class="button additional-button additional-button-text" type="submit" value="Войти">
+                  <label class="visually-hidden" for="enter">Войти</label>
+                  <input class="button additional-button additional-button-text" type="submit" id="enter" name="enter"
+                    value="Войти">
                   <div class="enter-link">
                     <a class="enter-link-text" href="#">Забыли пароль?</a>
                     <a class="enter-link-text" href="#">Регистрация</a>
@@ -133,8 +137,8 @@
             </div>
           </div>
         </li>
-        <li class="navigation-user-item">
 
+        <li class="navigation-user-item">
           <!-- Стили для нажатой кнопки записаны в классе navigation-user-link-opened -->
           <!-- Если кнопка нажата, под кнопкой появляется элемент popover-basket-empty (если корзина пуста) или popover-basket-full (если в корзине есть товары) -->
           <!-- При клике на область вне popover, класс  navigation-user-link-opened снимается с элемента -->
@@ -203,8 +207,8 @@
                 </li>
               </ul>
               <div class="basket-total">
-                <button class="button additional-button additional-button-text basket-button-order"
-                  type="submit">Оформить заказ</button>
+                <button type="submit"
+                  class="button additional-button additional-button-text basket-button-order">Оформить заказ</button>
                 <span class="basket-information-total">Итого: 790 ₽</span>
               </div>
             </div>
@@ -252,10 +256,10 @@
               <div class="range">
                 <div class="range-scale">
                   <div class="range-bar">
-                    <button class="range-toggle toggle-min">
+                    <button type="button" class="range-toggle toggle-min">
                       <span class="visually-hidden">Изменить минимальную цену.</span>
                     </button>
-                    <button class="range-toggle toggle-max">
+                    <button type="button" class="range-toggle toggle-max">
                       <span class="visually-hidden">Изменить максимальную цену.</span>
                     </button>
                   </div>
@@ -401,7 +405,7 @@
                 </ul>
               </div>
             </fieldset>
-            <button class="button button-third catalog-filter-button" type="submit">Применить</button>
+            <button type="submit" class="button button-third catalog-filter-button">Применить</button>
           </div>
         </form>
       </section>
@@ -676,7 +680,7 @@
           </li>
         </ul>
         <div class="show-products">
-          <button class="button main-button" type="button">Показать еще</button>
+          <button type="button" class="button main-button">Показать еще</button>
           <ul class="pagination">
             <li class="pagination-item">
               <a class="pagination-arrow pagination-prev pagination-disabled">
