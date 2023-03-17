@@ -31,6 +31,7 @@
   border: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
+  display: none;
 }
 
 html,
@@ -77,7 +78,7 @@ body {
   padding: 24px 0;
 }
 
-.big-block ~ .big-block {
+.big-block~.big-block {
   margin-top: 80px;
 }
 
@@ -93,6 +94,7 @@ img {
   font-family: inherit;
   font-style: normal;
   font-weight: 700;
+  white-space: nowrap;
   text-decoration: none;
   border: none;
 }
@@ -330,7 +332,6 @@ img {
   display: flex;
 }
 
-
 .slider-pagination-button {
   cursor: pointer;
   width: 12px;
@@ -395,7 +396,6 @@ img {
 
 /* Input field */
 
-
 .input {
   appearance: none;
   padding: 14px 16px 14px;
@@ -412,8 +412,6 @@ img {
   border-radius: 4px;
   width: 100%
 }
-
-
 
 .input::placeholder {
   color: #B9B9B9;
@@ -450,7 +448,6 @@ img {
   color: #2D3440;
   box-shadow: inset 0 0 0 1px #B9B9B9;
 }
-
 
 /* Header */
 
@@ -502,7 +499,6 @@ img {
   border-radius: 30px;
 }
 
-
 .navigation-link:focus {
   background-color: rgba(252, 252, 252, 0.5);
   border-radius: 30px;
@@ -524,7 +520,6 @@ img {
   letter-spacing: 0.4px;
   cursor: pointer;
 }
-
 
 .navigation-link-dropdown-opened svg {
   transform: scaleY(-1);
@@ -551,8 +546,6 @@ img {
   opacity: 0.3;
 }
 
-
-
 .navigation-user {
   display: flex;
   align-items: center;
@@ -571,8 +564,6 @@ img {
   padding: 0;
   text-decoration: none;
 }
-
-.button-enter {}
 
 /* Main */
 
@@ -622,7 +613,6 @@ img {
   display: flex;
   flex-wrap: wrap;
 }
-
 
 .slider-list {
   position: relative;
@@ -693,7 +683,6 @@ img {
   display: none;
 }
 
-
 .slider-item-second {
   position: absolute;
   transform: scale(0.33);
@@ -723,7 +712,6 @@ img {
   top: 258px;
   right: 278px;
 }
-
 
 .social-buttons-list {
   display: flex;
@@ -758,7 +746,6 @@ img {
   border-radius: 16px;
 }
 
-
 .gifts-description {
   display: block;
   margin: 0;
@@ -769,6 +756,7 @@ img {
 }
 
 .raspberry {
+  background-color: #FF7799;
   background-image: url(../images/raster/background-images/raspberry.png);
   background-size: contain;
   background-repeat: no-repeat;
@@ -776,6 +764,7 @@ img {
 }
 
 .marshmallow {
+  background-color: #FF7799;
   background-image: url(../images/raster/background-images/marshmellow.png);
   background-size: contain;
   background-repeat: no-repeat;
@@ -863,6 +852,7 @@ img {
 }
 
 .about {
+  background-color: #F0E3C9;
   background-image: url(../images/raster/background-images/waffle.jpg);
   background-size: cover;
   background-repeat: repeat;
@@ -890,18 +880,22 @@ img {
 }
 
 .decor-image-icecream {
+  background-color: #FFFFFF;
   background-image: url(../images/vector/decor-icon/ice-cream.svg);
 }
 
 .decor-image-cow {
+  background-color: #FFFFFF;
   background-image: url(../images/vector/decor-icon/cow.svg);
 }
 
 .decor-image-leaf {
+  background-color: #FFFFFF;
   background-image: url(../images/vector/decor-icon/leaf.svg);
 }
 
 .decor-image-thermometer {
+  background-color: #FFFFFF;
   background-image: url(../images/vector/decor-icon/thermometer.svg);
 }
 
@@ -946,6 +940,7 @@ img {
   flex-direction: column;
   padding: 33px 32px 32px 32px;
   gap: 12px;
+  background-color: #FFFFFF;
   background-image: url(../images/raster/background-images/news.jpg);
   background-repeat: no-repeat;
   border-radius: 16px;
@@ -970,13 +965,13 @@ img {
 .subscribe {
   display: flex;
   flex-direction: column;
+  background-color: #FFFFFF;
   background-image: url(../images/raster/background-images/line.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   padding: 6px;
   border-radius: 16px;
-
 }
 
 .subscribe-background {
@@ -1058,7 +1053,6 @@ img {
   padding-bottom: 64px;
 }
 
-
 .delivery::after {
   position: absolute;
   z-index: 1;
@@ -1066,6 +1060,7 @@ img {
   top: 0;
   display: block;
   content: "";
+  background-color: #F6F6F6;
   background-image: url(../images/raster/background-images/delivery.jpg);
   background-size: 1228px auto;
   background-repeat: no-repeat;
@@ -1101,6 +1096,7 @@ img {
 }
 
 .contacts {
+  background-color: #EEE2E2;
   background-image: url(../images/raster/background-images/feedback.jpg);
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -1123,8 +1119,6 @@ img {
   text-decoration: none;
   color: inherit;
 }
-
-
 
 .delivery-form {
   display: flex;
@@ -1188,7 +1182,6 @@ img {
   margin-top: 32px;
 }
 
-
 /* Tooltip */
 
 .form-label {
@@ -1251,8 +1244,8 @@ img {
   display: none;
 }
 
-.tooltip-toggle:hover + .tooltip-text,
-.tooltip-toggle:focus + .tooltip-text {
+.tooltip-toggle:hover+.tooltip-text,
+.tooltip-toggle:focus+.tooltip-text {
   display: block;
 }
 
@@ -1269,8 +1262,6 @@ img {
   border-bottom: 1px solid #B9B9B9;
   transform: translateY(-50%) rotate(45deg);
 }
-
-
 
 /* Footer */
 
@@ -1363,10 +1354,11 @@ img {
   font-weight: 700;
 }
 
-.breadcrumbs-item ~ .breadcrumbs-item::before {
+.breadcrumbs-item~.breadcrumbs-item::before {
   display: inline-block;
   content: "";
   margin: 4px 7px 0;
+  background-color: #FEAFC3;
   background-image: url(../images/vector/outline-icon/chevrons-right.svg);
   background-repeat: no-repeat;
   background-size: contain;
@@ -1387,7 +1379,6 @@ img {
 .navigation-link-current {
   border-bottom: 1px solid #2D3440;
 }
-
 
 /* Catalog filters */
 
@@ -1448,7 +1439,6 @@ img {
   list-style-type: none;
 }
 
-
 .price {
   width: 196px;
   height: auto;
@@ -1488,8 +1478,9 @@ img {
   border-radius: 20px;
   border: 0;
   outline: 0;
-  appearance: none;
   cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
 }
 
 .catalog-dropdown:hover {
@@ -1510,6 +1501,7 @@ img {
   content: "";
   height: 16px;
   width: 16px;
+  background-color: transparent;
   background-image: url(../images/vector/outline-icon/arrow-down.svg);
   background-size: contain;
   background-position: center;
@@ -1544,7 +1536,6 @@ img {
   height: 2px;
   background-color: #565C66;
 }
-
 
 .range-toggle {
   position: absolute;
@@ -1624,19 +1615,19 @@ img {
   height: 16px;
 }
 
-.control-input[type="checkbox"] + .control-mark .control-mark-check {
+.control-input[type="checkbox"]+.control-mark .control-mark-check {
   display: none;
 }
 
-.control-input[type="checkbox"] + .control-mark .control-mark-uncheck {
+.control-input[type="checkbox"]+.control-mark .control-mark-uncheck {
   display: block;
 }
 
-.control-input[type="checkbox"]:checked + .control-mark .control-mark-check {
+.control-input[type="checkbox"]:checked+.control-mark .control-mark-check {
   display: block;
 }
 
-.control-input[type="checkbox"]:checked + .control-mark .control-mark-uncheck {
+.control-input[type="checkbox"]:checked+.control-mark .control-mark-uncheck {
   display: none;
 }
 
@@ -1648,13 +1639,11 @@ img {
   fill: #FCFCFC;
 }
 
-.control-input[type="checkbox"]:disabled + .control-mark path {
+.control-input[type="checkbox"]:disabled+.control-mark path {
   fill: rgba(45, 52, 64, 0.5);
 }
 
-
 /* Radiobutton */
-
 
 .control-radio {
   position: absolute;
@@ -1666,8 +1655,7 @@ img {
   border-radius: 50%;
 }
 
-
-.control-input[type="radio"]:checked + .control-radio::before {
+.control-input[type="radio"]:checked+.control-radio::before {
   position: absolute;
   top: 4px;
   left: 4px;
@@ -1682,15 +1670,15 @@ img {
   border-color: #FCFCFC;
 }
 
-.control-input:disabled + .control-radio {
+.control-input:disabled+.control-radio {
   border-color: rgba(0, 0, 0, 0.4);
 }
 
-.control-input[type="radio"]:checked:hover + .control-radio::before {
+.control-input[type="radio"]:checked:hover+.control-radio::before {
   background-color: #FCFCFC;
 }
 
-.control-input[type="radio"]:checked:disabled + .control-radio::before {
+.control-input[type="radio"]:checked:disabled+.control-radio::before {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
@@ -1781,8 +1769,6 @@ img {
   background-color: rgba(252, 252, 252, 0.3);
 }
 
-
-
 /* Popover */
 
 .navigation-user-item {
@@ -1849,7 +1835,6 @@ img {
   flex-direction: column;
   position: relative;
 }
-
 
 .dropdown-list-catalog {
   position: relative;
@@ -1976,7 +1961,6 @@ img {
   padding: 24px 16px;
 }
 
-
 .input-search {
   position: relative;
   padding-right: 32px;
@@ -1991,6 +1975,7 @@ img {
   width: 16px;
   height: 16px;
   cursor: pointer;
+  background-color: #FCFCFC;
   background-image: url(../images/vector/outline-icon/cross.svg);
   background-position: center;
   opacity: 0.4;
@@ -1998,10 +1983,9 @@ img {
   background-color: transparent;
 }
 
-.input-search:not(:placeholder-shown) + .clear {
+.input-search:not(:placeholder-shown)+.clear {
   display: block;
 }
-
 
 .popover-enter {
   width: 420px;
