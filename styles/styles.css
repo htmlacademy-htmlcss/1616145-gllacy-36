@@ -31,6 +31,7 @@
   border: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
+  display: none;
 }
 
 html,
@@ -93,6 +94,7 @@ img {
   font-family: inherit;
   font-style: normal;
   font-weight: 700;
+  white-space: nowrap;
   text-decoration: none;
   border: none;
 }
@@ -1499,7 +1501,7 @@ img {
   content: "";
   height: 16px;
   width: 16px;
-  background-color: rgba(252, 252, 252, 0.3);
+  background-color: transparent;
   background-image: url(../images/vector/outline-icon/arrow-down.svg);
   background-size: contain;
   background-position: center;
